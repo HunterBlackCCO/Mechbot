@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\-Default\\Documents\\Unreal Projects\\Mechbot\\Source\\Mechbot\\Mechbot.Build.cs",
+		"D:\\-Default\\Documents\\Unreal Projects\\Mechbot\\Source\\Mechbot.Target.cs",
+		"D:\\-Default\\Documents\\Unreal Projects\\Mechbot\\Source\\MechbotEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}

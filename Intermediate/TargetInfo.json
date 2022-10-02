@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Mechbot",
+			"Path": "D:\\-Default\\Documents\\Unreal Projects\\Mechbot\\Source\\Mechbot.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MechbotEditor",
+			"Path": "D:\\-Default\\Documents\\Unreal Projects\\Mechbot\\Source\\MechbotEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
