@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechplayer.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\mechboteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\development\\mechbot\\definitions.mechbot.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\droids\\mechplayer.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\droids\\mechdroid.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechdroid.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\mechutility.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechutility.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\tools\\mechtool.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechtool.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\weapons\\mechweapon.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechweapon.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechplayer.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

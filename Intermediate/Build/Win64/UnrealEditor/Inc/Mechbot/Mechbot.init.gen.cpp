@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeMechbot_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xAB440D42,
-				0x6625AD2E,
+				0xE61E482D,
+				0x71096CB7,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_Mechbot.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_Mechbot.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Mechbot(Z_Construct_UPackage__Script_Mechbot, TEXT("/Script/Mechbot"), Z_Registration_Info_UPackage__Script_Mechbot, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xAB440D42, 0x6625AD2E));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Mechbot(Z_Construct_UPackage__Script_Mechbot, TEXT("/Script/Mechbot"), Z_Registration_Info_UPackage__Script_Mechbot, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xE61E482D, 0x71096CB7));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

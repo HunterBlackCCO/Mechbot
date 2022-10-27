@@ -11,6 +11,9 @@
     <None Include="..\..\Source\MechbotEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\Mechbot.png" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -22,6 +25,12 @@
     </None>
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
     </None>
     <Filter Include="Source\Mechbot">
       <UniqueIdentifier>{C109612E-52FA-3701-B476-2075EB641067}</UniqueIdentifier>
@@ -40,6 +49,126 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\Mechbot\MechbotGameModeBase.h">
       <Filter>Source\Mechbot</Filter>
+    </ClInclude>
+    <Filter Include="Source\Mechbot\Private">
+      <UniqueIdentifier>{28A3AA16-C49E-3A23-816E-6BA80A319492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mechbot\Private\Droids">
+      <UniqueIdentifier>{66C1E402-99E3-38E8-96AC-B4140E0D4D4D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Droids\MechDroid.cpp">
+      <Filter>Source\Mechbot\Private\Droids</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Droids\MechPlayer.cpp">
+      <Filter>Source\Mechbot\Private\Droids</Filter>
+    </ClCompile>
+    <Filter Include="Source\Mechbot\Private\SaveData">
+      <UniqueIdentifier>{74236AB9-741E-3708-BCED-E847E1800431}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\SaveData\MechSaveData.cpp">
+      <Filter>Source\Mechbot\Private\SaveData</Filter>
+    </ClCompile>
+    <Filter Include="Source\Mechbot\Private\Utilities">
+      <UniqueIdentifier>{1B28B351-1F66-3228-9990-905D03774D7D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\MechUtility.cpp">
+      <Filter>Source\Mechbot\Private\Utilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\Mechbot\Private\Utilities\Tools">
+      <UniqueIdentifier>{C03599E1-92F5-3EB4-8906-5E44A5757ACD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Tools\MechTool.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Tools\MechToolGrapple.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Tools\MechToolMagnet.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Tools\MechToolShift.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Tools\MechToolTransit.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Tools</Filter>
+    </ClCompile>
+    <Filter Include="Source\Mechbot\Private\Utilities\Weapons">
+      <UniqueIdentifier>{CFC96386-A4CD-341C-9534-7B048408522D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeapon.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponBolt.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponHammer.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponSpear.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponSword.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
+    </ClCompile>
+    <Filter Include="Source\Mechbot\Public">
+      <UniqueIdentifier>{5C7C0985-14F8-3664-BBF0-D99F51891E49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mechbot\Public\Droids">
+      <UniqueIdentifier>{F9A2CD0F-0DC7-3CC8-8BC2-B39B67B40493}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Droids\MechDroid.h">
+      <Filter>Source\Mechbot\Public\Droids</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Droids\MechPlayer.h">
+      <Filter>Source\Mechbot\Public\Droids</Filter>
+    </ClInclude>
+    <Filter Include="Source\Mechbot\Public\SaveData">
+      <UniqueIdentifier>{1ED79ADB-6514-3487-AF8D-12DDBDDAFD1E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\SaveData\MechSaveData.h">
+      <Filter>Source\Mechbot\Public\SaveData</Filter>
+    </ClInclude>
+    <Filter Include="Source\Mechbot\Public\Utilities">
+      <UniqueIdentifier>{01197511-FC61-3BCA-8128-C0B251F33050}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\MechUtility.h">
+      <Filter>Source\Mechbot\Public\Utilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\Mechbot\Public\Utilities\Tools">
+      <UniqueIdentifier>{161070F3-E040-332B-BBFD-A0C54433122B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Tools\MechTool.h">
+      <Filter>Source\Mechbot\Public\Utilities\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Tools\MechToolGrapple.h">
+      <Filter>Source\Mechbot\Public\Utilities\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Tools\MechToolMagnet.h">
+      <Filter>Source\Mechbot\Public\Utilities\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Tools\MechToolShift.h">
+      <Filter>Source\Mechbot\Public\Utilities\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Tools\MechToolTransit.h">
+      <Filter>Source\Mechbot\Public\Utilities\Tools</Filter>
+    </ClInclude>
+    <Filter Include="Source\Mechbot\Public\Utilities\Weapons">
+      <UniqueIdentifier>{A9E2DCE7-9D86-3BC8-8F65-D8C920F3F98C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeapon.h">
+      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponBolt.h">
+      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponHammer.h">
+      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponSpear.h">
+      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponSword.h">
+      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

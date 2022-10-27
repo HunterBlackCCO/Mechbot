@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechweaponspear.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\mechboteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\development\\mechbot\\definitions.mechbot.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\weapons\\mechweaponspear.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechweaponspear.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
