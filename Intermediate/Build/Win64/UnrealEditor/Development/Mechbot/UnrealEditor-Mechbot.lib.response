@@ -7,8 +7,8 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\MechbotEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechDroid.cpp.obj"
-"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechPlayer.cpp.obj"
+"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechPaperDroid.cpp.obj"
+"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechPaperPlayer.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechSaveData.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechTool.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechToolGrapple.cpp.obj"
@@ -25,8 +25,8 @@
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechbotGameModeBase.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\Mechbot.init.gen.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechbotGameModeBase.gen.cpp.obj"
-"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechDroid.gen.cpp.obj"
-"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechPlayer.gen.cpp.obj"
+"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechPaperDroid.gen.cpp.obj"
+"D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechPaperPlayer.gen.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechSaveData.gen.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechTool.gen.cpp.obj"
 "D:\-Default\Documents\Unreal Projects\Mechbot\Intermediate\Build\Win64\UnrealEditor\Development\Mechbot\MechToolGrapple.gen.cpp.obj"

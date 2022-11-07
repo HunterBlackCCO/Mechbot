@@ -26,6 +26,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Config\HoloLens">
       <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
     </Filter>
@@ -56,10 +59,10 @@
     <Filter Include="Source\Mechbot\Private\Droids">
       <UniqueIdentifier>{66C1E402-99E3-38E8-96AC-B4140E0D4D4D}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\Mechbot\Private\Droids\MechDroid.cpp">
+    <ClCompile Include="..\..\Source\Mechbot\Private\Droids\MechPaperDroid.cpp">
       <Filter>Source\Mechbot\Private\Droids</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Mechbot\Private\Droids\MechPlayer.cpp">
+    <ClCompile Include="..\..\Source\Mechbot\Private\Droids\MechPaperPlayer.cpp">
       <Filter>Source\Mechbot\Private\Droids</Filter>
     </ClCompile>
     <Filter Include="Source\Mechbot\Private\SaveData">
@@ -116,10 +119,10 @@
     <Filter Include="Source\Mechbot\Public\Droids">
       <UniqueIdentifier>{F9A2CD0F-0DC7-3CC8-8BC2-B39B67B40493}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\Mechbot\Public\Droids\MechDroid.h">
+    <ClInclude Include="..\..\Source\Mechbot\Public\Droids\MechPaperDroid.h">
       <Filter>Source\Mechbot\Public\Droids</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Mechbot\Public\Droids\MechPlayer.h">
+    <ClInclude Include="..\..\Source\Mechbot\Public\Droids\MechPaperPlayer.h">
       <Filter>Source\Mechbot\Public\Droids</Filter>
     </ClInclude>
     <Filter Include="Source\Mechbot\Public\SaveData">

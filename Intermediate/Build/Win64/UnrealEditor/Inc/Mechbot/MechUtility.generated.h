@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MECHBOT_MechUtility_generated_h
 
 #define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_12_SPARSE_DATA
-#define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_12_RPC_WRAPPERS
-#define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetSpecialEnergyCost); \
+	DECLARE_FUNCTION(execCanUseSpecialAbility);
+
+
+#define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetSpecialEnergyCost); \
+	DECLARE_FUNCTION(execCanUseSpecialAbility);
+
+
 #define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMechUtility(); \

@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Hunter Black, 2022. All Rights Reserved.
 
 #pragma once
 
@@ -22,8 +22,8 @@ private:
 protected:
 
 	// The Energy cost to the player to use the Special Ability
-	// UPROPERTY(BlueprintAssignable)
-	int32 SpecialEnergyCost;
+	UPROPERTY(EditDefaultsOnly)
+	uint8 SpecialEnergyCost;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -40,8 +40,11 @@ public:
 	virtual void ActivateSpecialAbility();
 
 	// This should be called in the Player class
-	virtual bool CanUseSpecialAbility(const int32 PlayerEnergy) const { return (PlayerEnergy >= SpecialEnergyCost); }
-	virtual int32 GetSpecialEnergyCost() const { return SpecialEnergyCost; }
+	UFUNCTION(BlueprintPure, Category = "MechUtility|Special")
+	virtual bool CanUseSpecialAbility(const uint8 PlayerEnergy) const { return (PlayerEnergy >= SpecialEnergyCost); }
+
+	UFUNCTION(BlueprintPure, Category = "MechUtility|Special")
+	virtual uint8 GetSpecialEnergyCost() const { return SpecialEnergyCost; }
 
 	virtual void SpawnInWorld(FString UtilityId);
 

@@ -11,3 +11,15 @@ void AMechTool::ActivateSpecialAbility()
 {
 	Super::ActivateSpecialAbility();
 }
+
+void AMechTool::StartCooldown()
+{
+	bOnCooldown = true;
+	// TODO - Start Timer(CooldownTimer)
+}
+
+void AMechTool::EndCooldown()
+{
+	bOnCooldown = false;
+	// TODO - End/Invalidate Timer?
+}

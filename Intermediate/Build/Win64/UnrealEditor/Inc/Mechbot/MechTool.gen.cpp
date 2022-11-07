@@ -28,6 +28,11 @@ void EmptyLinkFunctionForGeneratedCodeMechTool() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CooldownTimer_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_CooldownTimer;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -42,6 +47,17 @@ void EmptyLinkFunctionForGeneratedCodeMechTool() {}
 		{ "ModuleRelativePath", "Public/Utilities/Tools/MechTool.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechTool_Statics::NewProp_CooldownTimer_MetaData[] = {
+		{ "Category", "MechTool" },
+		{ "ClampMin", "0.000000" },
+		{ "ModuleRelativePath", "Public/Utilities/Tools/MechTool.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMechTool_Statics::NewProp_CooldownTimer = { "CooldownTimer", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechTool, CooldownTimer), METADATA_PARAMS(Z_Construct_UClass_AMechTool_Statics::NewProp_CooldownTimer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechTool_Statics::NewProp_CooldownTimer_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMechTool_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechTool_Statics::NewProp_CooldownTimer,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMechTool_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMechTool>::IsAbstract,
 	};
@@ -51,11 +67,11 @@ void EmptyLinkFunctionForGeneratedCodeMechTool() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AMechTool_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AMechTool_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AMechTool_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AMechTool_Statics::Class_MetaDataParams))
@@ -78,9 +94,9 @@ void EmptyLinkFunctionForGeneratedCodeMechTool() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Tools_MechTool_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechTool, AMechTool::StaticClass, TEXT("AMechTool"), &Z_Registration_Info_UClass_AMechTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechTool), 2339948215U) },
+		{ Z_Construct_UClass_AMechTool, AMechTool::StaticClass, TEXT("AMechTool"), &Z_Registration_Info_UClass_AMechTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechTool), 1039618957U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Tools_MechTool_h_3322782366(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Tools_MechTool_h_1014359334(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Tools_MechTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Tools_MechTool_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
