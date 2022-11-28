@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechgameinstance.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\mechboteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\development\\mechbot\\definitions.mechbot.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\mechgameinstance.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\tools\\mechtool.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\mechutility.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechutility.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechtool.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\weapons\\mechweapon.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechweapon.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealeditor\\inc\\mechbot\\mechgameinstance.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -58,10 +58,11 @@ protected:
 public:
 
 	// Health
+	UFUNCTION(BlueprintPure, Category = "MechDroid|Health")
 	bool CanBeDamaged() const { return bCanBeDamaged; }
 
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Health")
-	float GetPercentHealth() const { return (MaxHealth != 0) ? ((Health * 100.f) / MaxHealth) : 0.f; }
+	float GetPercentHealth() const { return (MaxHealth != 0) ? ((Health * 1.f) / MaxHealth) : 0.f; }
 
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Health")
 	bool IsAlive() const { return Health > 0; }

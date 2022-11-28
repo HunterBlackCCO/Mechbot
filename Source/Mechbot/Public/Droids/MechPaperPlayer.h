@@ -13,6 +13,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnergyUpdated, float, NewPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnWeaponEquipped, AMechWeapon*, EquippedWeapon);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnToolEquipped, AMechTool*, EquippedWeapon);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRevive);
 
 /**
  * 
@@ -34,10 +35,13 @@ class MECHBOT_API AMechPaperPlayer : public AMechPaperDroid
 	UPROPERTY(BlueprintAssignable)
 	FOnToolEquipped OnToolEquipped;
 
+	UPROPERTY(BlueprintAssignable)
+	FOnRevive OnRevive;
+
 private:
 
-	uint8 Lives;
 	uint8 Energy;
+	bool bCanUseTool;
 
 	// Utilities
 	TArray<AMechTool*> ObtainedTools;
@@ -45,9 +49,8 @@ private:
 
 	TArray<AMechWeapon*> ObtainedWeapons;
 	uint8 EquippedWeaponSlot;
-
+	
 	// States
-	bool bCanUseTool;
 	bool bCanWallJump;
 
 	// Planned Upgrades
@@ -68,14 +71,10 @@ protected:
 
 public:
 
+	virtual void BeginPlay() override;
+
 	// Getters
 	bool CanWallJump() const { return bHasWallJumpUpgrade && bCanWallJump; }
-
-	UFUNCTION(BlueprintPure, Category = "MechDroid|Player")
-	uint8 GetLifeCount() const { return Lives; }
-
-	virtual void StartDeath() override;
-	void GameOver();
 
 	// Health
 	virtual void TakeDamage(const uint8 Amount) override;
@@ -86,7 +85,7 @@ public:
 	void UseEnergy(const uint8 Amount);
 
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Energy")
-	float GetPercentEnergy() const { return (MaxEnergy != 0) ? ((Energy * 100.f) / MaxEnergy) : 0.f; }
+	float GetPercentEnergy() const { return (MaxEnergy != 0) ? ((Energy * 1.f) / MaxEnergy) : 0.f; }
 
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Energy")
 	void RegainEnergy(const uint8 Amount);
@@ -114,7 +113,11 @@ public:
 	// Use Weapons
 	bool IsEquippedWeaponSlotValid();
 	bool CanUseEquippedWeapon();
+
+	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
 	void ActivateEquippedWeaponMain();
+
+	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
 	void ActivateEquippedWeaponSpecial();
 
 };

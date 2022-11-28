@@ -1,39 +1,31 @@
 // Copyright Hunter Black, 2022. All Rights Reserved.
 
 #include "Droids/MechPaperPlayer.h"
+#include <MechGameInstance.h>
 
 AMechPaperPlayer::AMechPaperPlayer()
 {
-	Lives = 3;
-
-	// Utilities
-	EquippedToolSlot = 0;
-	EquippedWeaponSlot = 0;
-	bCanUseTool = true;
-
 	// Energy
+	bCanUseTool = true;
 	MaxEnergy = 50;
 	Energy = MaxEnergy;
 	RechargeEnergyRate = MaxEnergy / 5;
 	RechargeEnergyTimer = 1.5f;
 }
 
-void AMechPaperPlayer::StartDeath()
+void AMechPaperPlayer::BeginPlay()
 {
-	Super::StartDeath();
+	Super::BeginPlay();
 
-	// Lose a life and initiate Game Over sequence if no more lives remain
-	Lives--;
-
-	if (Lives < 1)
+	// Initialize Tools/Weapons from stored data
+	if (GetWorld())
 	{
-		GameOver();
+		if (const UMechGameInstance* ActiveData = Cast<UMechGameInstance>(GetGameInstance()))
+		{
+			ObtainedTools = ActiveData->GetObtainedTools();
+			ObtainedWeapons = ActiveData->GetObtainedWeapons();
+		}
 	}
-}
-
-void AMechPaperPlayer::GameOver()
-{
-	// TODO - Change scene to "Game Over" sequence, then move player back to Main Menu.
 }
 
 void AMechPaperPlayer::TakeDamage(const uint8 Amount)
