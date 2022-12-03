@@ -21,12 +21,27 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 		P_THIS->StartDeath();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UMechGameInstance::execSetActiveCheckpoint)
+	{
+		P_GET_PROPERTY(FByteProperty,Z_Param_NewCheckpoint);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetActiveCheckpoint(Z_Param_NewCheckpoint);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UMechGameInstance::execSetLives)
 	{
 		P_GET_PROPERTY(FByteProperty,Z_Param_NewLivesCount);
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->SetLives(Z_Param_NewLivesCount);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UMechGameInstance::execGetActiveCheckpoint)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(uint8*)Z_Param__Result=P_THIS->GetActiveCheckpoint();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UMechGameInstance::execGetLifeCount)
@@ -40,11 +55,46 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 	{
 		UClass* Class = UMechGameInstance::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetActiveCheckpoint", &UMechGameInstance::execGetActiveCheckpoint },
 			{ "GetLifeCount", &UMechGameInstance::execGetLifeCount },
+			{ "SetActiveCheckpoint", &UMechGameInstance::execSetActiveCheckpoint },
 			{ "SetLives", &UMechGameInstance::execSetLives },
 			{ "StartDeath", &UMechGameInstance::execStartDeath },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics
+	{
+		struct MechGameInstance_eventGetActiveCheckpoint_Parms
+		{
+			uint8 ReturnValue;
+		};
+		static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MechGameInstance_eventGetActiveCheckpoint_Parms, ReturnValue), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::Function_MetaDataParams[] = {
+		{ "Category", "MechDroid|Player" },
+		{ "ModuleRelativePath", "Public/MechGameInstance.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMechGameInstance, nullptr, "GetActiveCheckpoint", nullptr, nullptr, sizeof(Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::MechGameInstance_eventGetActiveCheckpoint_Parms), Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics
 	{
@@ -76,6 +126,46 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics
+	{
+		struct MechGameInstance_eventSetActiveCheckpoint_Parms
+		{
+			uint8 NewCheckpoint;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_NewCheckpoint_MetaData[];
+#endif
+		static const UECodeGen_Private::FBytePropertyParams NewProp_NewCheckpoint;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::NewProp_NewCheckpoint_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::NewProp_NewCheckpoint = { "NewCheckpoint", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MechGameInstance_eventSetActiveCheckpoint_Parms, NewCheckpoint), nullptr, METADATA_PARAMS(Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::NewProp_NewCheckpoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::NewProp_NewCheckpoint_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::NewProp_NewCheckpoint,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/MechGameInstance.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMechGameInstance, nullptr, "SetActiveCheckpoint", nullptr, nullptr, sizeof(Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::MechGameInstance_eventSetActiveCheckpoint_Parms), Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -161,7 +251,9 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Mechbot,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMechGameInstance_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint, "GetActiveCheckpoint" }, // 2230297682
 		{ &Z_Construct_UFunction_UMechGameInstance_GetLifeCount, "GetLifeCount" }, // 1496861522
+		{ &Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint, "SetActiveCheckpoint" }, // 1725051765
 		{ &Z_Construct_UFunction_UMechGameInstance_SetLives, "SetLives" }, // 2757039598
 		{ &Z_Construct_UFunction_UMechGameInstance_StartDeath, "StartDeath" }, // 1086134395
 	};
@@ -208,9 +300,9 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UMechGameInstance, UMechGameInstance::StaticClass, TEXT("UMechGameInstance"), &Z_Registration_Info_UClass_UMechGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMechGameInstance), 2674392956U) },
+		{ Z_Construct_UClass_UMechGameInstance, UMechGameInstance::StaticClass, TEXT("UMechGameInstance"), &Z_Registration_Info_UClass_UMechGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMechGameInstance), 9091837U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_3147200360(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_477426018(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

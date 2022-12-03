@@ -50,10 +50,8 @@ private:
 	TArray<AMechWeapon*> ObtainedWeapons;
 	uint8 EquippedWeaponSlot;
 	
-	// States
-	bool bCanWallJump;
-
 	// Planned Upgrades
+	bool bCanWallJump;
 	bool bHasWallJumpUpgrade;
 	bool bHasDurableArmorUpgrade;
 

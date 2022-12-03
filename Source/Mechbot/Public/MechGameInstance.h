@@ -21,6 +21,7 @@ class MECHBOT_API UMechGameInstance : public UGameInstance
 private:
 
 	uint8 Lives;
+	uint8 ActiveCheckpoint;
 
 	// Utilities
 	TArray<AMechTool*> ObtainedTools;
@@ -31,6 +32,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player")
 	uint8 GetLifeCount() const { return Lives; }
 
+	UFUNCTION(BlueprintPure, Category = "MechDroid|Player")
+	uint8 GetActiveCheckpoint() const { return ActiveCheckpoint; }
+
 	const TArray<AMechTool*>& GetObtainedTools() const { return ObtainedTools; }
 	const TArray<AMechWeapon*>& GetObtainedWeapons() const { return ObtainedWeapons; }
 
@@ -39,6 +43,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SetLives(const uint8 NewLivesCount) { Lives = NewLivesCount; }
+
+	UFUNCTION(BlueprintCallable)
+	void SetActiveCheckpoint(const uint8 NewCheckpoint) { ActiveCheckpoint = NewCheckpoint; }
 
 	UFUNCTION(BlueprintCallable)
 	void StartDeath();

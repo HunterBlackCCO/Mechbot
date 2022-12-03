@@ -102,6 +102,14 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 		*(float*)Z_Param__Result=P_THIS->GetPercentHealth();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AMechPaperDroid::execSetCanBeDamaged)
+	{
+		P_GET_UBOOL(Z_Param_bIsDamageable);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetCanBeDamaged(Z_Param_bIsDamageable);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMechPaperDroid::execCanBeDamaged)
 	{
 		P_FINISH;
@@ -117,6 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 			{ "GetPercentHealth", &AMechPaperDroid::execGetPercentHealth },
 			{ "Heal", &AMechPaperDroid::execHeal },
 			{ "IsAlive", &AMechPaperDroid::execIsAlive },
+			{ "SetCanBeDamaged", &AMechPaperDroid::execSetCanBeDamaged },
 			{ "TakeDamage", &AMechPaperDroid::execTakeDamage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -273,6 +282,52 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics
+	{
+		struct MechPaperDroid_eventSetCanBeDamaged_Parms
+		{
+			bool bIsDamageable;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsDamageable_MetaData[];
+#endif
+		static void NewProp_bIsDamageable_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsDamageable;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	void Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable_SetBit(void* Obj)
+	{
+		((MechPaperDroid_eventSetCanBeDamaged_Parms*)Obj)->bIsDamageable = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable = { "bIsDamageable", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MechPaperDroid_eventSetCanBeDamaged_Parms), &Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable_SetBit, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::NewProp_bIsDamageable,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::Function_MetaDataParams[] = {
+		{ "Category", "MechDroid|Health" },
+		{ "ModuleRelativePath", "Public/Droids/MechPaperDroid.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperDroid, nullptr, "SetCanBeDamaged", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::MechPaperDroid_eventSetCanBeDamaged_Parms), Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AMechPaperDroid_TakeDamage_Statics
 	{
 		struct MechPaperDroid_eventTakeDamage_Parms
@@ -355,6 +410,7 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 		{ &Z_Construct_UFunction_AMechPaperDroid_GetPercentHealth, "GetPercentHealth" }, // 162819178
 		{ &Z_Construct_UFunction_AMechPaperDroid_Heal, "Heal" }, // 313544569
 		{ &Z_Construct_UFunction_AMechPaperDroid_IsAlive, "IsAlive" }, // 3563773875
+		{ &Z_Construct_UFunction_AMechPaperDroid_SetCanBeDamaged, "SetCanBeDamaged" }, // 68765881
 		{ &Z_Construct_UFunction_AMechPaperDroid_TakeDamage, "TakeDamage" }, // 3739053575
 	};
 #if WITH_METADATA
@@ -438,9 +494,9 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechPaperDroid, AMechPaperDroid::StaticClass, TEXT("AMechPaperDroid"), &Z_Registration_Info_UClass_AMechPaperDroid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechPaperDroid), 2089944524U) },
+		{ Z_Construct_UClass_AMechPaperDroid, AMechPaperDroid::StaticClass, TEXT("AMechPaperDroid"), &Z_Registration_Info_UClass_AMechPaperDroid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechPaperDroid), 4225933894U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_1716616921(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_1914036825(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

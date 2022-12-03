@@ -61,6 +61,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Health")
 	bool CanBeDamaged() const { return bCanBeDamaged; }
 
+	UFUNCTION(BlueprintCallable, Category = "MechDroid|Health")
+	void SetCanBeDamaged(const bool bIsDamageable) { bCanBeDamaged = bIsDamageable; }
+
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Health")
 	float GetPercentHealth() const { return (MaxHealth != 0) ? ((Health * 1.f) / MaxHealth) : 0.f; }
 

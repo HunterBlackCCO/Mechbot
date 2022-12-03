@@ -40,6 +40,7 @@ static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDe
 	DECLARE_FUNCTION(execTakeDamage); \
 	DECLARE_FUNCTION(execIsAlive); \
 	DECLARE_FUNCTION(execGetPercentHealth); \
+	DECLARE_FUNCTION(execSetCanBeDamaged); \
 	DECLARE_FUNCTION(execCanBeDamaged);
 
 
@@ -49,6 +50,7 @@ static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDe
 	DECLARE_FUNCTION(execTakeDamage); \
 	DECLARE_FUNCTION(execIsAlive); \
 	DECLARE_FUNCTION(execGetPercentHealth); \
+	DECLARE_FUNCTION(execSetCanBeDamaged); \
 	DECLARE_FUNCTION(execCanBeDamaged);
 
 

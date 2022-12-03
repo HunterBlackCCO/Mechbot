@@ -17,14 +17,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execStartDeath); \
+	DECLARE_FUNCTION(execSetActiveCheckpoint); \
 	DECLARE_FUNCTION(execSetLives); \
+	DECLARE_FUNCTION(execGetActiveCheckpoint); \
 	DECLARE_FUNCTION(execGetLifeCount);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execStartDeath); \
+	DECLARE_FUNCTION(execSetActiveCheckpoint); \
 	DECLARE_FUNCTION(execSetLives); \
+	DECLARE_FUNCTION(execGetActiveCheckpoint); \
 	DECLARE_FUNCTION(execGetLifeCount);
 
 

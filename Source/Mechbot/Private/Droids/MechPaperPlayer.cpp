@@ -17,10 +17,10 @@ void AMechPaperPlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Initialize Tools/Weapons from stored data
-	if (GetWorld())
+	// Initialize Player Tools/Weapons from stored data
+	if (const UWorld* ActiveWorld = GetWorld())
 	{
-		if (const UMechGameInstance* ActiveData = Cast<UMechGameInstance>(GetGameInstance()))
+		if (const UMechGameInstance* ActiveData = Cast<UMechGameInstance>(ActiveWorld->GetGameInstance()))
 		{
 			ObtainedTools = ActiveData->GetObtainedTools();
 			ObtainedWeapons = ActiveData->GetObtainedWeapons();
