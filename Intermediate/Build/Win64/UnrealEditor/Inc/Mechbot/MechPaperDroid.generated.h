@@ -41,7 +41,9 @@ static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDe
 	DECLARE_FUNCTION(execIsAlive); \
 	DECLARE_FUNCTION(execGetPercentHealth); \
 	DECLARE_FUNCTION(execSetCanBeDamaged); \
-	DECLARE_FUNCTION(execCanBeDamaged);
+	DECLARE_FUNCTION(execCanBeDamaged); \
+	DECLARE_FUNCTION(execSetCanAttack); \
+	DECLARE_FUNCTION(execCanAttack);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
@@ -51,7 +53,9 @@ static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDe
 	DECLARE_FUNCTION(execIsAlive); \
 	DECLARE_FUNCTION(execGetPercentHealth); \
 	DECLARE_FUNCTION(execSetCanBeDamaged); \
-	DECLARE_FUNCTION(execCanBeDamaged);
+	DECLARE_FUNCTION(execCanBeDamaged); \
+	DECLARE_FUNCTION(execSetCanAttack); \
+	DECLARE_FUNCTION(execCanAttack);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_19_INCLASS_NO_PURE_DECLS \

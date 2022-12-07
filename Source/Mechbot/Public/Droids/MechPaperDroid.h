@@ -57,6 +57,12 @@ protected:
 
 public:
 
+	UFUNCTION(BlueprintPure, Category = "MechDroid")
+	bool CanAttack() const { return bCanAttack; }
+
+	UFUNCTION(BlueprintCallable, Category = "MechDroid")
+	void SetCanAttack(const bool bNewValue) { bCanAttack = bNewValue; }
+
 	// Health
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Health")
 	bool CanBeDamaged() const { return bCanBeDamaged; }
@@ -77,10 +83,6 @@ public:
 	virtual void Heal(const uint8 Amount);
 
 	void SignalHealthUpdated();
-
-	// Other
-	void SpawnDroid();
-	void CreateAttack();
 
 	virtual void StartDeath();
 };

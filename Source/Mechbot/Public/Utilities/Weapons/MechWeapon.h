@@ -14,7 +14,17 @@ class MECHBOT_API AMechWeapon : public AMechUtility
 {
 	GENERATED_BODY()
 	
+protected:
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MechWeapon")
+	UClass* MainBullet;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MechWeapon")
+	UClass* SpecialBullet;
+
 public:
+
+	void SpawnBullet(UClass* BulletClass);
 
 	// Every Weapon has a "Main Ability" and a "Special ability"
 	// "Main Abilities" are the primary way to damage Droids
@@ -22,4 +32,6 @@ public:
 
 	virtual void ActivateMainAbility() override;
 	virtual void ActivateSpecialAbility() override;
+
+	virtual void GiveToPlayer(AActor* OtherActor) override;
 };

@@ -18,11 +18,6 @@ private:
 
 	bool bOnCooldown;
 
-protected:
-
-	UPROPERTY(EditDefaultsOnly, Category = "MechTool", meta=(ClampMin=0.0f))
-	float CooldownTimer;
-
 public:
 	
 	// Every Tool has a "Main Ability" and a "Special ability"

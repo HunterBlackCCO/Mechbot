@@ -104,17 +104,11 @@
     <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeapon.cpp">
       <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponBolt.cpp">
-      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponHammer.cpp">
-      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponSpear.cpp">
-      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\MechWeaponSword.cpp">
-      <Filter>Source\Mechbot\Private\Utilities\Weapons</Filter>
+    <Filter Include="Source\Mechbot\Private\Utilities\Weapons\Bullets">
+      <UniqueIdentifier>{C4DDA1B3-E41A-3090-8E3E-3ECAEE719413}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\Utilities\Weapons\Bullets\MechBullet.cpp">
+      <Filter>Source\Mechbot\Private\Utilities\Weapons\Bullets</Filter>
     </ClCompile>
     <Filter Include="Source\Mechbot\Public">
       <UniqueIdentifier>{5C7C0985-14F8-3664-BBF0-D99F51891E49}</UniqueIdentifier>
@@ -167,17 +161,11 @@
     <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeapon.h">
       <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponBolt.h">
-      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponHammer.h">
-      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponSpear.h">
-      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\MechWeaponSword.h">
-      <Filter>Source\Mechbot\Public\Utilities\Weapons</Filter>
+    <Filter Include="Source\Mechbot\Public\Utilities\Weapons\Bullets">
+      <UniqueIdentifier>{15B73145-BC03-37BD-A384-0CA795075092}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\Utilities\Weapons\Bullets\MechBullet.h">
+      <Filter>Source\Mechbot\Public\Utilities\Weapons\Bullets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -35,16 +35,6 @@ void AMechPaperDroid::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-void AMechPaperDroid::SpawnDroid()
-{
-	// TODO
-}
-
-void AMechPaperDroid::CreateAttack()
-{
-	// TODO
-}
-
 void AMechPaperDroid::TakeDamage(const uint8 Amount)
 {
 	if (!bCanBeDamaged || Amount == 0)

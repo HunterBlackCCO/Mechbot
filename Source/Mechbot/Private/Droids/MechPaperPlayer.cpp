@@ -11,6 +11,13 @@ AMechPaperPlayer::AMechPaperPlayer()
 	Energy = MaxEnergy;
 	RechargeEnergyRate = MaxEnergy / 5;
 	RechargeEnergyTimer = 1.5f;
+
+	EquippedWeaponSlot = 0;
+	EquippedToolSlot = 0;
+
+	// Initialize Components
+	BulletSpawnLocation = CreateDefaultSubobject<USceneComponent>(TEXT("BulletSpawnLocation"));
+	BulletSpawnLocation->SetupAttachment(RootComponent);
 }
 
 void AMechPaperPlayer::BeginPlay()
@@ -149,6 +156,30 @@ bool AMechPaperPlayer::HasWeapon(const AMechWeapon* Weapon)
 	return false;
 }
 
+void AMechPaperPlayer::AddWeapon(AMechWeapon* Weapon)
+{
+	if (!Weapon || HasWeapon(Weapon))
+	{
+		return;
+	}
+
+	ObtainedWeapons.AddUnique(Weapon);
+
+	OnWeaponAdded.Broadcast(Weapon);
+}
+
+void AMechPaperPlayer::AddTool(AMechTool* Tool)
+{
+	if (!Tool || HasTool(Tool))
+	{
+		return;
+	}
+
+	ObtainedTools.AddUnique(Tool);
+
+	OnToolAdded.Broadcast(Tool);
+}
+
 /// <summary>
 /// Returns true if NewSlot is within a valid range and different than EquippedSlot.
 /// </summary>
@@ -226,6 +257,7 @@ void AMechPaperPlayer::ActivateEquippedWeaponSpecial()
 	if (CanUseEquippedWeapon() && ObtainedWeapons[EquippedWeaponSlot]->CanUseSpecialAbility(Energy))
 	{
 		ObtainedWeapons[EquippedWeaponSlot]->ActivateSpecialAbility();
+		UseEnergy(ObtainedWeapons[EquippedWeaponSlot]->GetSpecialEnergyCost());
 	}
 }
 
