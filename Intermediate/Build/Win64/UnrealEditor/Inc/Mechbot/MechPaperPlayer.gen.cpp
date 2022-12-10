@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 	MECHBOT_API UClass* Z_Construct_UClass_AMechTool_NoRegister();
 	MECHBOT_API UFunction* Z_Construct_UDelegateFunction_Mechbot_OnToolAdded__DelegateSignature();
 	MECHBOT_API UFunction* Z_Construct_UDelegateFunction_Mechbot_OnRevive__DelegateSignature();
+	MECHBOT_API UFunction* Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature();
 	MECHBOT_API UClass* Z_Construct_UClass_AMechPaperPlayer_NoRegister();
 	MECHBOT_API UClass* Z_Construct_UClass_AMechPaperPlayer();
 	MECHBOT_API UClass* Z_Construct_UClass_AMechPaperDroid();
@@ -207,18 +208,47 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_Mechbot, nullptr, "OnLoad__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(AMechPaperPlayer::execSaveOnWin)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SaveOnWin();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMechPaperPlayer::execActivateEquippedWeaponSpecial)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->ActivateEquippedWeaponSpecial();
+		*(bool*)Z_Param__Result=P_THIS->ActivateEquippedWeaponSpecial();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AMechPaperPlayer::execActivateEquippedWeaponMain)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->ActivateEquippedWeaponMain();
+		*(bool*)Z_Param__Result=P_THIS->ActivateEquippedWeaponMain();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AMechPaperPlayer::execSwapEquippedWeapon)
@@ -252,6 +282,20 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		*(float*)Z_Param__Result=P_THIS->GetPercentEnergy();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AMechPaperPlayer::execHasAnyWeapons)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->HasAnyWeapons();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AMechPaperPlayer::execGetEquippedWeaponSlot)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(uint8*)Z_Param__Result=P_THIS->GetEquippedWeaponSlot();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMechPaperPlayer::execGetEquippedWeaponCooldown)
 	{
 		P_FINISH;
@@ -275,18 +319,36 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 			{ "AddWeapon", &AMechPaperPlayer::execAddWeapon },
 			{ "GetEquippedWeapon", &AMechPaperPlayer::execGetEquippedWeapon },
 			{ "GetEquippedWeaponCooldown", &AMechPaperPlayer::execGetEquippedWeaponCooldown },
+			{ "GetEquippedWeaponSlot", &AMechPaperPlayer::execGetEquippedWeaponSlot },
 			{ "GetPercentEnergy", &AMechPaperPlayer::execGetPercentEnergy },
+			{ "HasAnyWeapons", &AMechPaperPlayer::execHasAnyWeapons },
 			{ "RegainEnergy", &AMechPaperPlayer::execRegainEnergy },
+			{ "SaveOnWin", &AMechPaperPlayer::execSaveOnWin },
 			{ "SwapEquippedWeapon", &AMechPaperPlayer::execSwapEquippedWeapon },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics
 	{
+		struct MechPaperPlayer_eventActivateEquippedWeaponMain_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((MechPaperPlayer_eventActivateEquippedWeaponMain_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MechPaperPlayer_eventActivateEquippedWeaponMain_Parms), &Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::Function_MetaDataParams[] = {
@@ -294,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "ActivateEquippedWeaponMain", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "ActivateEquippedWeaponMain", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::MechPaperPlayer_eventActivateEquippedWeaponMain_Parms), Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -306,10 +368,25 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 	}
 	struct Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics
 	{
+		struct MechPaperPlayer_eventActivateEquippedWeaponSpecial_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((MechPaperPlayer_eventActivateEquippedWeaponSpecial_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MechPaperPlayer_eventActivateEquippedWeaponSpecial_Parms), &Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::Function_MetaDataParams[] = {
@@ -317,7 +394,7 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "ActivateEquippedWeaponSpecial", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "ActivateEquippedWeaponSpecial", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::MechPaperPlayer_eventActivateEquippedWeaponSpecial_Parms), Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -442,6 +519,47 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics
+	{
+		struct MechPaperPlayer_eventGetEquippedWeaponSlot_Parms
+		{
+			uint8 ReturnValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MechPaperPlayer_eventGetEquippedWeaponSlot_Parms, ReturnValue), nullptr, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::NewProp_ReturnValue_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::Function_MetaDataParams[] = {
+		{ "Category", "MechDroid|Player|Weapon" },
+		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "GetEquippedWeaponSlot", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::MechPaperPlayer_eventGetEquippedWeaponSlot_Parms), Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AMechPaperPlayer_GetPercentEnergy_Statics
 	{
 		struct MechPaperPlayer_eventGetPercentEnergy_Parms
@@ -472,6 +590,52 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMechPaperPlayer_GetPercentEnergy_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics
+	{
+		struct MechPaperPlayer_eventHasAnyWeapons_Parms
+		{
+			bool ReturnValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	void Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((MechPaperPlayer_eventHasAnyWeapons_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MechPaperPlayer_eventHasAnyWeapons_Parms), &Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::Function_MetaDataParams[] = {
+		{ "Category", "MechDroid|Player|Weapon" },
+		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "HasAnyWeapons", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::MechPaperPlayer_eventHasAnyWeapons_Parms), Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -513,6 +677,28 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMechPaperPlayer_RegainEnergy_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechPaperPlayer, nullptr, "SaveOnWin", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -598,6 +784,10 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 #endif
 		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnRevive;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnLoad_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLoad;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxEnergy_MetaData[];
 #endif
 		static const UECodeGen_Private::FBytePropertyParams NewProp_MaxEnergy;
@@ -618,13 +808,16 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Mechbot,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMechPaperPlayer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain, "ActivateEquippedWeaponMain" }, // 823573731
-		{ &Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial, "ActivateEquippedWeaponSpecial" }, // 4265576486
+		{ &Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponMain, "ActivateEquippedWeaponMain" }, // 1968369089
+		{ &Z_Construct_UFunction_AMechPaperPlayer_ActivateEquippedWeaponSpecial, "ActivateEquippedWeaponSpecial" }, // 3985182560
 		{ &Z_Construct_UFunction_AMechPaperPlayer_AddWeapon, "AddWeapon" }, // 1776587104
 		{ &Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeapon, "GetEquippedWeapon" }, // 2293383650
 		{ &Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponCooldown, "GetEquippedWeaponCooldown" }, // 1014335720
+		{ &Z_Construct_UFunction_AMechPaperPlayer_GetEquippedWeaponSlot, "GetEquippedWeaponSlot" }, // 701915925
 		{ &Z_Construct_UFunction_AMechPaperPlayer_GetPercentEnergy, "GetPercentEnergy" }, // 1113353819
+		{ &Z_Construct_UFunction_AMechPaperPlayer_HasAnyWeapons, "HasAnyWeapons" }, // 3859558821
 		{ &Z_Construct_UFunction_AMechPaperPlayer_RegainEnergy, "RegainEnergy" }, // 682813910
+		{ &Z_Construct_UFunction_AMechPaperPlayer_SaveOnWin, "SaveOnWin" }, // 2834443641
 		{ &Z_Construct_UFunction_AMechPaperPlayer_SwapEquippedWeapon, "SwapEquippedWeapon" }, // 899369474
 	};
 #if WITH_METADATA
@@ -684,12 +877,18 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 #endif
 	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnRevive = { "OnRevive", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechPaperPlayer, OnRevive), Z_Construct_UDelegateFunction_Mechbot_OnRevive__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnRevive_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnRevive_MetaData)) }; // 121511518
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnLoad_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnLoad = { "OnLoad", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechPaperPlayer, OnLoad), Z_Construct_UDelegateFunction_Mechbot_OnLoad__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnLoad_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnLoad_MetaData)) }; // 2143716882
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_MaxEnergy_MetaData[] = {
 		{ "Category", "MechPaperPlayer" },
 		{ "ClampMin", "1" },
-		{ "Comment", "// Blueprint Editable\n" },
+		{ "Comment", "// Config variables\n" },
 		{ "ModuleRelativePath", "Public/Droids/MechPaperPlayer.h" },
-		{ "ToolTip", "Blueprint Editable" },
+		{ "ToolTip", "Config variables" },
 	};
 #endif
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_MaxEnergy = { "MaxEnergy", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechPaperPlayer, MaxEnergy), nullptr, METADATA_PARAMS(Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_MaxEnergy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_MaxEnergy_MetaData)) };
@@ -715,6 +914,7 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnToolEquipped,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnToolAdded,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnRevive,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_OnLoad,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_MaxEnergy,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_RechargeEnergyRate,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperPlayer_Statics::NewProp_RechargeEnergyTimer,
@@ -755,9 +955,9 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperPlayer() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechPaperPlayer, AMechPaperPlayer::StaticClass, TEXT("AMechPaperPlayer"), &Z_Registration_Info_UClass_AMechPaperPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechPaperPlayer), 4162859756U) },
+		{ Z_Construct_UClass_AMechPaperPlayer, AMechPaperPlayer::StaticClass, TEXT("AMechPaperPlayer"), &Z_Registration_Info_UClass_AMechPaperPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechPaperPlayer), 3121024587U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_552789278(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_1122774721(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

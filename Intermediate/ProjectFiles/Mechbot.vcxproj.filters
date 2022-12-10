@@ -71,6 +71,9 @@
     <Filter Include="Source\Mechbot\Private\SaveData">
       <UniqueIdentifier>{74236AB9-741E-3708-BCED-E847E1800431}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Mechbot\Private\SaveData\MechCheckpoint.cpp">
+      <Filter>Source\Mechbot\Private\SaveData</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Mechbot\Private\SaveData\MechSaveData.cpp">
       <Filter>Source\Mechbot\Private\SaveData</Filter>
     </ClCompile>
@@ -128,6 +131,9 @@
     <Filter Include="Source\Mechbot\Public\SaveData">
       <UniqueIdentifier>{1ED79ADB-6514-3487-AF8D-12DDBDDAFD1E}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Mechbot\Public\SaveData\MechCheckpoint.h">
+      <Filter>Source\Mechbot\Public\SaveData</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Mechbot\Public\SaveData\MechSaveData.h">
       <Filter>Source\Mechbot\Public\SaveData</Filter>
     </ClInclude>

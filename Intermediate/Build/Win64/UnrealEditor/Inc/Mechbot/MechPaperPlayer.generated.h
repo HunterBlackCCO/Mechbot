@@ -87,32 +87,45 @@ static inline void FOnRevive_DelegateWrapper(const FMulticastScriptDelegate& OnR
 }
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_SPARSE_DATA
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_RPC_WRAPPERS \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_19_DELEGATE \
+static inline void FOnLoad_DelegateWrapper(const FMulticastScriptDelegate& OnLoad) \
+{ \
+	OnLoad.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_SPARSE_DATA
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSaveOnWin); \
 	DECLARE_FUNCTION(execActivateEquippedWeaponSpecial); \
 	DECLARE_FUNCTION(execActivateEquippedWeaponMain); \
 	DECLARE_FUNCTION(execSwapEquippedWeapon); \
 	DECLARE_FUNCTION(execAddWeapon); \
 	DECLARE_FUNCTION(execRegainEnergy); \
 	DECLARE_FUNCTION(execGetPercentEnergy); \
+	DECLARE_FUNCTION(execHasAnyWeapons); \
+	DECLARE_FUNCTION(execGetEquippedWeaponSlot); \
 	DECLARE_FUNCTION(execGetEquippedWeaponCooldown); \
 	DECLARE_FUNCTION(execGetEquippedWeapon);
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSaveOnWin); \
 	DECLARE_FUNCTION(execActivateEquippedWeaponSpecial); \
 	DECLARE_FUNCTION(execActivateEquippedWeaponMain); \
 	DECLARE_FUNCTION(execSwapEquippedWeapon); \
 	DECLARE_FUNCTION(execAddWeapon); \
 	DECLARE_FUNCTION(execRegainEnergy); \
 	DECLARE_FUNCTION(execGetPercentEnergy); \
+	DECLARE_FUNCTION(execHasAnyWeapons); \
+	DECLARE_FUNCTION(execGetEquippedWeaponSlot); \
 	DECLARE_FUNCTION(execGetEquippedWeaponCooldown); \
 	DECLARE_FUNCTION(execGetEquippedWeapon);
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMechPaperPlayer(); \
 	friend struct Z_Construct_UClass_AMechPaperPlayer_Statics; \
@@ -121,7 +134,7 @@ public: \
 	DECLARE_SERIALIZER(AMechPaperPlayer)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_INCLASS \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_INCLASS \
 private: \
 	static void StaticRegisterNativesAMechPaperPlayer(); \
 	friend struct Z_Construct_UClass_AMechPaperPlayer_Statics; \
@@ -130,7 +143,7 @@ public: \
 	DECLARE_SERIALIZER(AMechPaperPlayer)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_STANDARD_CONSTRUCTORS \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMechPaperPlayer(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMechPaperPlayer) \
@@ -143,7 +156,7 @@ private: \
 public:
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMechPaperPlayer(AMechPaperPlayer&&); \
@@ -154,25 +167,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMechPaperPlayer)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_23_PROLOG
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_GENERATED_BODY_LEGACY \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_24_PROLOG
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_SPARSE_DATA \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_RPC_WRAPPERS \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_INCLASS \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_STANDARD_CONSTRUCTORS \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_SPARSE_DATA \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_RPC_WRAPPERS \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_INCLASS \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_GENERATED_BODY \
+#define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_SPARSE_DATA \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_INCLASS_NO_PURE_DECLS \
-	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_26_ENHANCED_CONSTRUCTORS \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_SPARSE_DATA \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_INCLASS_NO_PURE_DECLS \
+	FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

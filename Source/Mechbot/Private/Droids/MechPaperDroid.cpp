@@ -7,7 +7,6 @@ AMechPaperDroid::AMechPaperDroid()
 {
 	MaxHealth = 100;
 	Health = MaxHealth;
-	BaseDamage = 1;
 
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -21,18 +20,7 @@ void AMechPaperDroid::BeginPlay()
 	bCanAttack = true;
 	bCanBeDamaged = true;
 	bCanMove = true;
-}
-
-// Called every frame
-void AMechPaperDroid::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
-
-// Called to bind functionality to input
-void AMechPaperDroid::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	Health = MaxHealth;
 }
 
 void AMechPaperDroid::TakeDamage(const uint8 Amount)

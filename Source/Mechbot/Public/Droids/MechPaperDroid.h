@@ -22,14 +22,6 @@ public:
 	// Sets default values for this character's properties
 	AMechPaperDroid();
 
-	// Default Functions - may not need
-
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 	// Delegates
 	UPROPERTY(BlueprintAssignable)
 	FOnHealthUpdated OnHealthUpdated;
@@ -48,9 +40,6 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "MechDroid", meta=(ClampMin=1))
 	uint8 MaxHealth;
-
-	UPROPERTY(EditDefaultsOnly, Category = "MechDroid")
-	uint8 BaseDamage;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

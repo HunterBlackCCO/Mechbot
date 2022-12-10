@@ -14,12 +14,4 @@ class MECHBOT_API AMechbotGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
-public:
-
-	void SpawnPlayer();
-	void SpawnDroids();
-	void SpawnBoss();
-	void SpawnUtilities();
-
-	void GeneratePlayerData();
 };

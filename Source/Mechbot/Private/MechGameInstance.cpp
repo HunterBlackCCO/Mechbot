@@ -1,39 +1,27 @@
 // Copyright Hunter Black, 2022. All Rights Reserved.
 
-
 #include "MechGameInstance.h"
+#include <Kismet/GameplayStatics.h>
+#include <SaveData/MechSaveData.h>
 
 UMechGameInstance::UMechGameInstance()
 {
 	Lives = 3;
-}
-
-void UMechGameInstance::AddTool(AMechTool* Tool)
-{
-	if (!Tool)
-	{
-		return;
-	}
-
-	ObtainedTools.AddUnique(Tool);
-}
-
-void UMechGameInstance::AddWeapon(AMechWeapon* Weapon)
-{
-	if (!Weapon)
-	{
-		return;
-	}
-
-	ObtainedWeapons.AddUnique(Weapon);
+	TotalCheckpoints = 0;
+	ActiveCheckpoint = 0;
 }
 
 void UMechGameInstance::StartDeath()
 {
 	Lives--;
 
-	if (Lives < 1)
+	// Save our new Lives count
+	UMechSaveData* SaveData = Cast<UMechSaveData>(UGameplayStatics::CreateSaveGameObject(UMechSaveData::StaticClass()));
+	if (!SaveData)
 	{
-		// TODO - Wipe player save data
+		UE_LOG(LogTemp, Error, TEXT("UMechGameInstance::StartDeath() - Could not create save object."));
+		return;
 	}
+
+	SaveData->SaveDataAfterDeath(GetWorld(), Lives);
 }

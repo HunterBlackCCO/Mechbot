@@ -16,6 +16,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnWeaponAdded, AMechWeapon*, NewWea
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnToolEquipped, AMechTool*, EquippedWeapon);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnToolAdded, AMechTool*, NewTool);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRevive);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnLoad);
 
 /**
  * 
@@ -28,6 +29,7 @@ class MECHBOT_API AMechPaperPlayer : public AMechPaperDroid
 	AMechPaperPlayer();
 
 public:
+
 	// Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component")
 	USceneComponent* BulletSpawnLocation;
@@ -51,6 +53,9 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FOnRevive OnRevive;
 
+	UPROPERTY(BlueprintAssignable)
+	FOnLoad OnLoad;
+
 private:
 
 	uint8 Energy;
@@ -70,7 +75,7 @@ private:
 
 protected:
 
-	// Blueprint Editable
+	// Config variables
 	UPROPERTY(EditDefaultsOnly, meta=(ClampMin=1))
 	uint8 MaxEnergy;
 
@@ -86,11 +91,22 @@ public:
 
 	// Getters
 	bool CanWallJump() const { return bHasWallJumpUpgrade && bCanWallJump; }
+
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
 	const AMechWeapon* GetEquippedWeapon() const { return (ObtainedWeapons.IsValidIndex(EquippedWeaponSlot)) ? ObtainedWeapons[EquippedWeaponSlot] : nullptr; }
+
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
 	const float GetEquippedWeaponCooldown() const {	return (ObtainedWeapons.IsValidIndex(EquippedWeaponSlot)) ? ObtainedWeapons[EquippedWeaponSlot]->GetCooldownTimer() : -1; }
+
+	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
+	const uint8 GetEquippedWeaponSlot() const { return EquippedWeaponSlot; }
+
+	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
+	const bool HasAnyWeapons() const { return ObtainedWeapons.Num() > 0; }
+
 	const FTransform& GetBulletSpawnTransform() const { return (BulletSpawnLocation) ? BulletSpawnLocation->GetComponentTransform() : GetActorTransform(); }
+	const TArray<AMechWeapon*>& GetObtainedWeapons() { return ObtainedWeapons; }
+	const TArray<AMechTool*>& GetObtainedTools() { return ObtainedTools; }
 
 	// Health
 	virtual void TakeDamage(const uint8 Amount) override;
@@ -117,9 +133,6 @@ public:
 	void AddWeapon(AMechWeapon* Weapon);
 	void AddTool(AMechTool* Tool);
 
-	const TArray<AMechWeapon*>& GetObtainedWeapons() { return ObtainedWeapons; }
-	const TArray<AMechTool*>& GetObtainedTools() { return ObtainedTools; }
-
 	bool IsUtilitySwapValid(const int32 UtilitiesSize, const uint8 NewSlot, const uint8 EquippedSlot);
 	void SwapEquippedTool(const uint8 ToolSlot);
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
@@ -136,9 +149,11 @@ public:
 	bool CanUseEquippedWeapon();
 
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
-	void ActivateEquippedWeaponMain();
+	bool ActivateEquippedWeaponMain();
 
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
-	void ActivateEquippedWeaponSpecial();
-
+	bool ActivateEquippedWeaponSpecial();
+	
+	UFUNCTION(BlueprintCallable)
+	void SaveOnWin();
 };

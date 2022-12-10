@@ -2,6 +2,8 @@
 
 #include "Droids/MechPaperPlayer.h"
 #include <MechGameInstance.h>
+#include <SaveData/MechSaveData.h>
+#include <Kismet/GameplayStatics.h>
 
 AMechPaperPlayer::AMechPaperPlayer()
 {
@@ -24,14 +26,17 @@ void AMechPaperPlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Initialize Player Tools/Weapons from stored data
-	if (const UWorld* ActiveWorld = GetWorld())
+	// Load Saved Data
+	UMechSaveData* SaveData = Cast<UMechSaveData>(UGameplayStatics::CreateSaveGameObject(UMechSaveData::StaticClass()));
+	if (!SaveData)
 	{
-		if (const UMechGameInstance* ActiveData = Cast<UMechGameInstance>(ActiveWorld->GetGameInstance()))
-		{
-			ObtainedTools = ActiveData->GetObtainedTools();
-			ObtainedWeapons = ActiveData->GetObtainedWeapons();
-		}
+		UE_LOG(LogTemp, Error, TEXT("AMechPaperPlayer::BeginPlay() - Could not create save object."));
+		return;
+	}
+
+	if (SaveData->LoadData(GetWorld(), this))
+	{
+		OnLoad.Broadcast();
 	}
 }
 
@@ -106,17 +111,15 @@ bool AMechPaperPlayer::HasUtility(const AMechUtility* Utility)
 	}
 	else if (!Utility)
 	{
-		// TODO - Log Error - NULL
+		UE_LOG(LogTemp, Error, TEXT("AMechPaperPlayer::HasUtility() - Utility was null."));
 		return false;
 	}
 
-	// TODO - Log Error - INVALID
+	UE_LOG(LogTemp, Error, TEXT("AMechPaperPlayer::HasUtility() - Invalid Utility type."));
 	return false;
 }
 
-/// <summary>
-/// Returns true if ObtainedTools contains Tool.
-/// </summary>
+/** Returns true if ObtainedTools contains Tool. */
 bool AMechPaperPlayer::HasTool(const AMechTool* Tool)
 {
 	if (!Tool)
@@ -135,9 +138,7 @@ bool AMechPaperPlayer::HasTool(const AMechTool* Tool)
 	return false;
 }
 
-/// <summary>
-/// Returns true if ObtainedWeapons contains Weapon.
-/// </summary>
+/** Returns true if ObtainedWeapons contains Weapon. */
 bool AMechPaperPlayer::HasWeapon(const AMechWeapon* Weapon)
 {
 	if (!Weapon)
@@ -180,17 +181,13 @@ void AMechPaperPlayer::AddTool(AMechTool* Tool)
 	OnToolAdded.Broadcast(Tool);
 }
 
-/// <summary>
-/// Returns true if NewSlot is within a valid range and different than EquippedSlot.
-/// </summary>
+/** Returns true if NewSlot is within a valid range and different than EquippedSlot. */
 bool AMechPaperPlayer::IsUtilitySwapValid(const int32 UtilitiesSize, const uint8 NewSlot, const uint8 EquippedSlot)
 {
 	return (NewSlot != EquippedSlot) && (NewSlot < UtilitiesSize);
 }
 
-/// <summary>
-/// Swaps the Player's equipped Tool to the Tool at the new slot number.
-/// </summary>
+/** Swaps the Player's equipped Tool to the Tool at the new slot number. */
 void AMechPaperPlayer::SwapEquippedTool(const uint8 ToolSlot)
 {
 	// Perform swap and signal listeners only if the swap is valid
@@ -201,9 +198,7 @@ void AMechPaperPlayer::SwapEquippedTool(const uint8 ToolSlot)
 	}
 }
 
-/// <summary>
-/// Swaps the Player's equipped Weapon to the Weapon at the new slot number.
-/// </summary>
+/** Swaps the Player's equipped Weapon to the Weapon at the new slot number. */
 void AMechPaperPlayer::SwapEquippedWeapon(const uint8 WeaponSlot)
 {
 	// Perform swap and signal listeners only if the swap is valid
@@ -242,23 +237,27 @@ bool AMechPaperPlayer::CanUseEquippedWeapon()
 	return bCanAttack && IsEquippedWeaponSlotValid();
 }
 
-void AMechPaperPlayer::ActivateEquippedWeaponMain()
+bool AMechPaperPlayer::ActivateEquippedWeaponMain()
 {
 	// Activate the Weapon's Main Ability if the equipped slot is valid
 	if (CanUseEquippedWeapon())
 	{
 		ObtainedWeapons[EquippedWeaponSlot]->ActivateMainAbility();
+		return true;
 	}
+	return false;
 }
 
-void AMechPaperPlayer::ActivateEquippedWeaponSpecial()
+bool AMechPaperPlayer::ActivateEquippedWeaponSpecial()
 {
 	// Activate the Weapon's Special Ability if the equipped slot is valid and that Player has enough energy
 	if (CanUseEquippedWeapon() && ObtainedWeapons[EquippedWeaponSlot]->CanUseSpecialAbility(Energy))
 	{
 		ObtainedWeapons[EquippedWeaponSlot]->ActivateSpecialAbility();
 		UseEnergy(ObtainedWeapons[EquippedWeaponSlot]->GetSpecialEnergyCost());
+		return true;
 	}
+	return false;
 }
 
 bool AMechPaperPlayer::IsEquippedToolSlotValid()
@@ -269,11 +268,10 @@ bool AMechPaperPlayer::IsEquippedToolSlotValid()
 	}
 	else if (!ObtainedTools.Num())
 	{
-		//UE_LOG(LogMessage, ELogVerbosity::Fatal, TEXT("FATAL Error: MechPlayer::ObtainedTools was found empty.");
 		return false;
 	}
 
-	//UE_LOG(LogMessage, ELogVerbosity::Error, TEXT("Error: Invalid EquippedToolSlot value detected: %d"), EquippedToolSlot.ToString());
+	UE_LOG(LogTemp, Error, TEXT("AMechPaperPlayer::IsEquippedToolSlotValid() - Invalid EquippedToolSlot value detected: %i"), EquippedToolSlot);
 	EquippedToolSlot = 0;
 	return false;
 }
@@ -286,11 +284,23 @@ bool AMechPaperPlayer::IsEquippedWeaponSlotValid()
 	}
 	else if (!ObtainedWeapons.Num())
 	{
-		//UE_LOG(LogMessage, ELogVerbosity::Fatal, TEXT("FATAL Error: MechPlayer::ObtainedWeapons was found empty.");
 		return false;
 	}
 	
-	//UE_LOG(LogMessage, ELogVerbosity::Error, TEXT("Error: Invalid EquippedWeaponSlot value detected: %s"), EquippedWeaponSlot.ToString());
+	UE_LOG(LogTemp, Error, TEXT("AMechPaperPlayer::IsEquippedWeaponSlotValid() - Invalid EquippedWeaponSlot value detected: %i"), EquippedWeaponSlot);
 	EquippedWeaponSlot = 0;
 	return false;
+}
+
+void AMechPaperPlayer::SaveOnWin()
+{
+	// Save Data for a NewGame+
+	UMechSaveData* SaveData = Cast<UMechSaveData>(UGameplayStatics::CreateSaveGameObject(UMechSaveData::StaticClass()));
+	if (!SaveData)
+	{
+		UE_LOG(LogTemp, Error, TEXT("AMechPaperPlayer::SaveOnWin() - Could not create save object."));
+		return;
+	}
+
+	SaveData->SaveDataAfterGameWin(GetWorld(), this);
 }

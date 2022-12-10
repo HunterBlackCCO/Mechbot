@@ -494,10 +494,6 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[];
 #endif
 		static const UECodeGen_Private::FBytePropertyParams NewProp_MaxHealth;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_BaseDamage_MetaData[];
-#endif
-		static const UECodeGen_Private::FBytePropertyParams NewProp_BaseDamage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -548,18 +544,10 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 	};
 #endif
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechPaperDroid, MaxHealth), nullptr, METADATA_PARAMS(Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_MaxHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_MaxHealth_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_BaseDamage_MetaData[] = {
-		{ "Category", "MechDroid" },
-		{ "ModuleRelativePath", "Public/Droids/MechPaperDroid.h" },
-	};
-#endif
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_BaseDamage = { "BaseDamage", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechPaperDroid, BaseDamage), nullptr, METADATA_PARAMS(Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_BaseDamage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_BaseDamage_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMechPaperDroid_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_OnHealthUpdated,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_OnDeath,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_MaxHealth,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechPaperDroid_Statics::NewProp_BaseDamage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMechPaperDroid_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMechPaperDroid>::IsAbstract,
@@ -597,9 +585,9 @@ void EmptyLinkFunctionForGeneratedCodeMechPaperDroid() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechPaperDroid, AMechPaperDroid::StaticClass, TEXT("AMechPaperDroid"), &Z_Registration_Info_UClass_AMechPaperDroid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechPaperDroid), 95761855U) },
+		{ Z_Construct_UClass_AMechPaperDroid, AMechPaperDroid::StaticClass, TEXT("AMechPaperDroid"), &Z_Registration_Info_UClass_AMechPaperDroid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechPaperDroid), 2675033743U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_4091468182(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_3787593364(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperDroid_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
