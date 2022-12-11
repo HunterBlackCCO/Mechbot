@@ -16,8 +16,4 @@ Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxPvdSDK_x64.dll	2022-10-02T04:08
 Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll	2022-10-02T04:08:47.287Z
 Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll	2022-10-02T04:08:47.287Z
 Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll	2022-10-02T10:28:02.294Z
-<<<<<<< HEAD
-Mechbot.exe	2022-12-11T18:18:52.660Z
-=======
-Mechbot.exe	2022-12-11T08:00:44.491Z
->>>>>>> aa076cd (Cleanup and Finalizations)
+Mechbot.exe	2022-12-11T21:21:35.851Z

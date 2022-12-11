@@ -51,33 +51,6 @@
 			]
 		},
 		{
-<<<<<<< HEAD
-=======
-			"ShaderMapHash": "DC662FADED5C77B6D4456A8A78B04DCC16D274EC",
-			"Assets": [
-				"/Engine/EditorMaterials/Camera/CineMat"
-			]
-		},
-		{
-			"ShaderMapHash": "64F711963ED34B6AF1EE61A4B93FC8E3225B225E",
-			"Assets": [
-				"/Engine/VREditor/TransformGizmo/Xray"
-			]
-		},
-		{
-			"ShaderMapHash": "6BC4F45367FAC73ACCAFA8CD9667AB56C2F23608",
-			"Assets": [
-				"/Engine/VREditor/TransformGizmo/Main"
-			]
-		},
-		{
-			"ShaderMapHash": "C04C5B9338BB5E7A5A56E8EB14F31D97127A7D8B",
-			"Assets": [
-				"/Engine/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial"
-			]
-		},
-		{
->>>>>>> aa076cd (Cleanup and Finalizations)
 			"ShaderMapHash": "EC0B9E24AAAB5DF9FA2D660C0AA56DC12CB5C37E",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultLightFunctionMaterial"
@@ -133,21 +106,6 @@
 			]
 		},
 		{
-<<<<<<< HEAD
-=======
-			"ShaderMapHash": "ECC697C48BA966F0825110EFF887124C8B715EF3",
-			"Assets": [
-				"/Engine/VREditor/TransformGizmo/TransformGizmoMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "6B155BF25ABE1B5D74C1CCF6398D60B69E8E7C0A",
-			"Assets": [
-				"/Engine/EditorMaterials/WorldPartition/WorldPartitionSpatialHashGridPreviewMaterial"
-			]
-		},
-		{
->>>>>>> aa076cd (Cleanup and Finalizations)
 			"ShaderMapHash": "7E49B2C7E4F45A769712E5F5D597423E50A31090",
 			"Assets": [
 				"/HairStrands/Materials/HairDebugMaterial"
@@ -209,15 +167,6 @@
 			]
 		},
 		{
-<<<<<<< HEAD
-=======
-			"ShaderMapHash": "CA5E52CACC8C177679D06C910BA38FFD19582423",
-			"Assets": [
-				"/Engine/EditorMaterials/PreviewShadowIndicatorMaterial"
-			]
-		},
-		{
->>>>>>> aa076cd (Cleanup and Finalizations)
 			"ShaderMapHash": "CE5D72DE311D46F68FCE2027B9A3DAF2DB389E47",
 			"Assets": [
 				"/Paper2D/OpaqueUnlitSpriteMaterial"

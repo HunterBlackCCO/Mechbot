@@ -37,10 +37,6 @@
 			"ChunkId": "f0a7f83421ac425b00000001"
 		},
 		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset",
-			"ChunkId": "5f510b7cd6e0bdc800000001"
-		},
-		{
 			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset",
 			"ChunkId": "8fcb1cae0c92026900000001"
 		},
@@ -51,6 +47,22 @@
 		{
 			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uasset",
 			"ChunkId": "a8a408dbac6bb61700000001"
+		},
+		{
+			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset",
+			"ChunkId": "7b967f8ff09764ce00000001"
+		},
+		{
+			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset",
+			"ChunkId": "931f8593c76b1a3700000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture.uasset",
+			"ChunkId": "b60fa590a5fe4d6f00000001"
+		},
+		{
+			"Path": "Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset",
+			"ChunkId": "c18dd883a0c55c8b00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineResources/FilmGrains/Marcie_Grain_v3_128_M2_000.uasset",
@@ -87,74 +99,6 @@
 		{
 			"Path": "Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset",
 			"ChunkId": "1c3a80931d7381bf00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset",
-			"ChunkId": "7b967f8ff09764ce00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset",
-			"ChunkId": "931f8593c76b1a3700000001"
-		},
-		{
-			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset",
-			"ChunkId": "3bd77c49df92ee7b00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset",
-			"ChunkId": "bb0c9910913c4acc00000001"
-		},
-		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset",
-			"ChunkId": "3f4f90b51972562400000001"
-		},
-		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset",
-			"ChunkId": "b2e55f36209c19b000000001"
-		},
-		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset",
-			"ChunkId": "8d4486caf50605b200000001"
-		},
-		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset",
-			"ChunkId": "84ee12d7bc5f5a8000000001"
-		},
-		{
-			"Path": "Engine/Plugins/Animation/ControlRig/Content/Controls/DefaultGizmoLibraryNormalized.uasset",
-			"ChunkId": "c1ceadea19a929af00000001"
-		},
-		{
-			"Path": "Engine/Content/Tutorial/ContentIntroCurve.uasset",
-			"ChunkId": "3cf25e9da31d4f2a00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairMeshesDefaultMaterial.uasset",
-			"ChunkId": "a325708448a8980800000001"
-		},
-		{
-			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairCardsDefaultMaterial.uasset",
-			"ChunkId": "a257a4a1759b7c6d00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairDefaultMaterial.uasset",
-			"ChunkId": "7bae9d93c88ae44900000001"
-		},
-		{
-			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uasset",
-			"ChunkId": "6f3a7c0fe1cf64ce00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/Empty.uasset",
-			"ChunkId": "efd3b99beb745ea100000001"
-		},
-		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture.uasset",
-			"ChunkId": "b60fa590a5fe4d6f00000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset",
-			"ChunkId": "c18dd883a0c55c8b00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineMaterials/Black_1x1_EXR_Texture_VT.uasset",
@@ -209,8 +153,60 @@
 			"ChunkId": "8500a33b2fedbab800000001"
 		},
 		{
-			"Path": "Engine/Content/EngineDebugMaterials/VolumeToRender.uasset",
-			"ChunkId": "7f8259be57e87dce00000001"
+			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset",
+			"ChunkId": "3bd77c49df92ee7b00000001"
+		},
+		{
+			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset",
+			"ChunkId": "bb0c9910913c4acc00000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset",
+			"ChunkId": "3f4f90b51972562400000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset",
+			"ChunkId": "b2e55f36209c19b000000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset",
+			"ChunkId": "8d4486caf50605b200000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset",
+			"ChunkId": "5f510b7cd6e0bdc800000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset",
+			"ChunkId": "84ee12d7bc5f5a8000000001"
+		},
+		{
+			"Path": "Engine/Plugins/Animation/ControlRig/Content/Controls/DefaultGizmoLibraryNormalized.uasset",
+			"ChunkId": "c1ceadea19a929af00000001"
+		},
+		{
+			"Path": "Engine/Content/Tutorial/ContentIntroCurve.uasset",
+			"ChunkId": "3cf25e9da31d4f2a00000001"
+		},
+		{
+			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairMeshesDefaultMaterial.uasset",
+			"ChunkId": "a325708448a8980800000001"
+		},
+		{
+			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairCardsDefaultMaterial.uasset",
+			"ChunkId": "a257a4a1759b7c6d00000001"
+		},
+		{
+			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairDefaultMaterial.uasset",
+			"ChunkId": "7bae9d93c88ae44900000001"
+		},
+		{
+			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uasset",
+			"ChunkId": "6f3a7c0fe1cf64ce00000001"
+		},
+		{
+			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/Empty.uasset",
+			"ChunkId": "efd3b99beb745ea100000001"
 		},
 		{
 			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset",
@@ -219,6 +215,10 @@
 		{
 			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk",
 			"ChunkId": "27d3dbbd9cb5875a00000002"
+		},
+		{
+			"Path": "Engine/Content/EngineDebugMaterials/VolumeToRender.uasset",
+			"ChunkId": "7f8259be57e87dce00000001"
 		},
 		{
 			"Path": "Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset",
@@ -257,6 +257,18 @@
 			"ChunkId": "a06a91154845992200000001"
 		},
 		{
+			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairGroupColors.uasset",
+			"ChunkId": "55c5d73fec0135d200000001"
+		},
+		{
+			"Path": "Engine/Content/EngineMaterials/HairDebugColor.uasset",
+			"ChunkId": "8efe6173efa8192200000001"
+		},
+		{
+			"Path": "Engine/Content/EngineMaterials/HairColorMap.uasset",
+			"ChunkId": "2c913f2705b478d900000001"
+		},
+		{
 			"Path": "Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset",
 			"ChunkId": "79688f0e793acea100000001"
 		},
@@ -275,18 +287,6 @@
 		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset",
 			"ChunkId": "a29fb34f83f7d31a00000001"
-		},
-		{
-			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairGroupColors.uasset",
-			"ChunkId": "55c5d73fec0135d200000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/HairDebugColor.uasset",
-			"ChunkId": "8efe6173efa8192200000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/HairColorMap.uasset",
-			"ChunkId": "2c913f2705b478d900000001"
 		},
 		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset",
@@ -309,16 +309,16 @@
 			"ChunkId": "474711309ee6ba8900000001"
 		},
 		{
+			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_VolumeNoiseShape64.uasset",
+			"ChunkId": "730711032edb546300000001"
+		},
+		{
 			"Path": "Engine/Content/EngineMeshes/Sphere.uasset",
 			"ChunkId": "f421d8f857b9ed0300000001"
 		},
 		{
 			"Path": "Engine/Content/EngineMeshes/Sphere.ubulk",
 			"ChunkId": "f421d8f857b9ed0300000002"
-		},
-		{
-			"Path": "Mechbot/Content/Textures/UI/Font/Planes_ValMore.uasset",
-			"ChunkId": "1a236b77a8bc766f00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineResources/GradientTexture0.uasset",
@@ -333,44 +333,16 @@
 			"ChunkId": "a996adcfa357ed2d00000002"
 		},
 		{
-			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_VolumeNoiseShape64.uasset",
-			"ChunkId": "730711032edb546300000001"
+			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_VolumeNoiseErosion32.uasset",
+			"ChunkId": "e21a9990b0ff22d600000001"
 		},
 		{
 			"Path": "Engine/Content/EngineFonts/RobotoDistanceField.uasset",
 			"ChunkId": "52a5c49a743a12b500000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling2.uasset",
-			"ChunkId": "1b3f189ef4fa2f5400000001"
-		},
-		{
-			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling1.uasset",
-			"ChunkId": "0a1d36c9dc8acb6c00000001"
-		},
-		{
-			"Path": "Mechbot/Content/Textures/UI/Button/Normal.uasset",
-			"ChunkId": "8c01fd47589b7fce00000001"
-		},
-		{
-			"Path": "Mechbot/Content/Textures/UI/Button/Hover.uasset",
-			"ChunkId": "2fa26e8fb9e0130e00000001"
-		},
-		{
-			"Path": "Engine/Content/EngineResources/WhiteSquareTexture.uasset",
-			"ChunkId": "b85ee5fd59f4dd2000000001"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_NoiseErosion.uasset",
-			"ChunkId": "92d47df83dccf7d800000001"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_NoiseErosion.ubulk",
-			"ChunkId": "92d47df83dccf7d800000002"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_VolumeNoiseErosion32.uasset",
-			"ChunkId": "e21a9990b0ff22d600000001"
+			"Path": "Mechbot/Content/Textures/UI/Font/Planes_ValMore.uasset",
+			"ChunkId": "1a236b77a8bc766f00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineSky/VolumetricClouds/CloudWeatherTexture.uasset",
@@ -387,6 +359,34 @@
 		{
 			"Path": "Engine/Content/EngineMaterials/DefaultDiffuse.ubulk",
 			"ChunkId": "7539f12095a3f0d100000002"
+		},
+		{
+			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_NoiseErosion.uasset",
+			"ChunkId": "92d47df83dccf7d800000001"
+		},
+		{
+			"Path": "Engine/Content/EngineSky/VolumetricClouds/T_NoiseErosion.ubulk",
+			"ChunkId": "92d47df83dccf7d800000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling3.uasset",
+			"ChunkId": "32c380496951ef0800000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling2.uasset",
+			"ChunkId": "1b3f189ef4fa2f5400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling1.uasset",
+			"ChunkId": "0a1d36c9dc8acb6c00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/UI/Button/Normal.uasset",
+			"ChunkId": "8c01fd47589b7fce00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/UI/Button/Hover.uasset",
+			"ChunkId": "2fa26e8fb9e0130e00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset",
@@ -417,16 +417,20 @@
 			"ChunkId": "3e6f2bc6739d380300000001"
 		},
 		{
+			"Path": "Engine/Content/EngineResources/Black.uasset",
+			"ChunkId": "cda0cf6115260c9400000001"
+		},
+		{
+			"Path": "Engine/Content/EngineResources/WhiteSquareTexture.uasset",
+			"ChunkId": "b85ee5fd59f4dd2000000001"
+		},
+		{
 			"Path": "Engine/Content/EngineResources/DefaultTexture.uasset",
 			"ChunkId": "6baf53cf79c0948b00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineResources/DefaultTexture.ubulk",
 			"ChunkId": "6baf53cf79c0948b00000002"
-		},
-		{
-			"Path": "Engine/Content/EngineResources/Black.uasset",
-			"ChunkId": "cda0cf6115260c9400000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Weapons/LaserWeapon.uasset",
@@ -513,18 +517,6 @@
 			"ChunkId": "d4c4b70e6dc44e2000000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/run-shot/run-shot5.uasset",
-			"ChunkId": "469afb56ed0cf35600000001"
-		},
-		{
-			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-bite/sprites/rino-fish-bite1.uasset",
-			"ChunkId": "6103bf98062b9bb600000001"
-		},
-		{
-			"Path": "Mechbot/Content/Textures/Droids/GhostBot/Owlet_Monster_Walk_6.uasset",
-			"ChunkId": "c464bd32fdc7c43f00000001"
-		},
-		{
 			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling6.uasset",
 			"ChunkId": "15befc1712c035d000000001"
 		},
@@ -537,12 +529,28 @@
 			"ChunkId": "3211bad7c32d539e00000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling3.uasset",
-			"ChunkId": "32c380496951ef0800000001"
-		},
-		{
 			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-jump/sprites/rino-fish-jump4.uasset",
 			"ChunkId": "12af8b54a29109c000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/Font/Planes_ValMore.uasset",
+			"ChunkId": "5d24e7eb33daa07400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Walk_Run_Push_Dust_6.uasset",
+			"ChunkId": "30c40b8078b0921900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Rock2.uasset",
+			"ChunkId": "f6d3cf70432a7d6300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-bite/sprites/rino-fish-bite1.uasset",
+			"ChunkId": "6103bf98062b9bb600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/GhostBot/Owlet_Monster_Walk_6.uasset",
+			"ChunkId": "c464bd32fdc7c43f00000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/Warped_Rino_Fish/rino-fish-jump/sprites/rino-fish-jump3.uasset",
@@ -677,6 +685,290 @@
 			"ChunkId": "9bfdbea046c8e50000000001"
 		},
 		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Walk_Run_Push_Dust_6.uasset",
+			"ChunkId": "09dafc033d9dbe7900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Rock1.uasset",
+			"ChunkId": "11dafafc13730aa300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Walk_6.uasset",
+			"ChunkId": "0b88fa0401cfd13000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Walk+Attack_6.uasset",
+			"ChunkId": "a40b662532323def00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Throw_4.uasset",
+			"ChunkId": "128b5cd8d7f602ee00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Throw_4.ubulk",
+			"ChunkId": "128b5cd8d7f602ee00000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Run_6.uasset",
+			"ChunkId": "7e7d215d0878a3bf00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Push_6.uasset",
+			"ChunkId": "b994e8782501086800000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Jump_8.uasset",
+			"ChunkId": "0cda5ebddab8787c00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Jump_8.ubulk",
+			"ChunkId": "0cda5ebddab8787c00000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Idle_4.uasset",
+			"ChunkId": "4d9285be4669efc200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Idle_4.ubulk",
+			"ChunkId": "4d9285be4669efc200000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Hurt_4.uasset",
+			"ChunkId": "bbca25679d31943400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Hurt_4.ubulk",
+			"ChunkId": "bbca25679d31943400000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Death_8.uasset",
+			"ChunkId": "cef546e7e6f4a7a500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Death_8.ubulk",
+			"ChunkId": "cef546e7e6f4a7a500000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Climb_4.uasset",
+			"ChunkId": "9f7b59b9470840c100000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Climb_4.ubulk",
+			"ChunkId": "9f7b59b9470840c100000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Attack2_6.uasset",
+			"ChunkId": "4070edc691ddbf8700000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Attack1_4.uasset",
+			"ChunkId": "9e40ef84f8557c8d00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Attack1_4.ubulk",
+			"ChunkId": "9e40ef84f8557c8d00000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster.uasset",
+			"ChunkId": "751ac501f7bc0adc00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Double_Jump_Dust_5.uasset",
+			"ChunkId": "9571b4f84f9349d200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Double_Jump_Dust_5.uasset",
+			"ChunkId": "0fba8a69a7827c9800000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Rock2.uasset",
+			"ChunkId": "61d9c9592f2055d600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Rock1.uasset",
+			"ChunkId": "220d1350f15e01d000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6.uasset",
+			"ChunkId": "96e03b2c545e044400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk+Attack_6.uasset",
+			"ChunkId": "9fd79e809056b4f300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Throw_4.uasset",
+			"ChunkId": "1dcb95e926ebd35000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Throw_4.ubulk",
+			"ChunkId": "1dcb95e926ebd35000000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Run_6.uasset",
+			"ChunkId": "fc09883ab29bd7da00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Push_6.uasset",
+			"ChunkId": "5c6c1db498e789ab00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8.uasset",
+			"ChunkId": "d9b637d75833770200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8.ubulk",
+			"ChunkId": "d9b637d75833770200000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4.uasset",
+			"ChunkId": "1c4267f58f09a2a600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4.ubulk",
+			"ChunkId": "1c4267f58f09a2a600000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Hurt_4.uasset",
+			"ChunkId": "1b0dafb81e6e3e8200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Hurt_4.ubulk",
+			"ChunkId": "1b0dafb81e6e3e8200000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Death_8.uasset",
+			"ChunkId": "4e8e74094257cb5b00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Death_8.ubulk",
+			"ChunkId": "4e8e74094257cb5b00000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Climb_4.uasset",
+			"ChunkId": "ecfceba6203eccd900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Climb_4.ubulk",
+			"ChunkId": "ecfceba6203eccd900000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack2_6.uasset",
+			"ChunkId": "3b7d22fe5cb83fb900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4.uasset",
+			"ChunkId": "1954cf1e63d5000300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4.ubulk",
+			"ChunkId": "1954cf1e63d5000300000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster.uasset",
+			"ChunkId": "8e165666fd1f996800000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster.uasset",
+			"ChunkId": "8858748c8c67c36300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Walk_Run_Push_Dust_6.uasset",
+			"ChunkId": "75c4901b9ecc34d000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Rock2.uasset",
+			"ChunkId": "5f62fe8e9e88ae0300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Rock1.uasset",
+			"ChunkId": "409041741e1f97ec00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Walk_6.uasset",
+			"ChunkId": "6f804ed87fe145a100000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Walk+Attack_6.uasset",
+			"ChunkId": "6d3864312ac6b7ea00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Throw_4.uasset",
+			"ChunkId": "388ab7e4c52d508900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Throw_4.ubulk",
+			"ChunkId": "388ab7e4c52d508900000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Run_6.uasset",
+			"ChunkId": "15a95637c763807000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Push_6.uasset",
+			"ChunkId": "33e0cc69394c04ed00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Jump_8.uasset",
+			"ChunkId": "ebc1b4b54b029ac000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Jump_8.ubulk",
+			"ChunkId": "ebc1b4b54b029ac000000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Idle_4.uasset",
+			"ChunkId": "3a320d6d4186169200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Idle_4.ubulk",
+			"ChunkId": "3a320d6d4186169200000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Hurt_4.uasset",
+			"ChunkId": "f4ab53c8597b60f300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Hurt_4.ubulk",
+			"ChunkId": "f4ab53c8597b60f300000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Death_8.uasset",
+			"ChunkId": "0cd71b05db8edf1100000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Death_8.ubulk",
+			"ChunkId": "0cd71b05db8edf1100000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Climb_4.uasset",
+			"ChunkId": "833fa207e64d69a500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Climb_4.ubulk",
+			"ChunkId": "833fa207e64d69a500000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Attack2_6.uasset",
+			"ChunkId": "91139c8d9937a91300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Attack1_4.uasset",
+			"ChunkId": "8d5c56b75352d82a00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Attack1_4.ubulk",
+			"ChunkId": "8d5c56b75352d82a00000002"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/jump/chibi-robot1.uasset",
+			"ChunkId": "bed0438ae8b7471900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Double_Jump_Dust_5.uasset",
+			"ChunkId": "b136e392ae50aabd00000001"
+		},
+		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/stand-shot/stand-shot.uasset",
 			"ChunkId": "a5e310c9f0a913c800000001"
 		},
@@ -685,8 +977,8 @@
 			"ChunkId": "02a36ed128bb396000000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/front/front.uasset",
-			"ChunkId": "243266e7bf3994e300000001"
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/run-shot/run-shot5.uasset",
+			"ChunkId": "469afb56ed0cf35600000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/run-shot/run-shot4.uasset",
@@ -733,8 +1025,8 @@
 			"ChunkId": "bdf3b573f723eb2d00000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/jump/chibi-robot1.uasset",
-			"ChunkId": "bed0438ae8b7471900000001"
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/back/back.uasset",
+			"ChunkId": "6ea43551d1f7b36700000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/idle/chibi-robot.uasset",
@@ -749,8 +1041,8 @@
 			"ChunkId": "4e33f3c000999ad200000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/vertical-jump/chibi-robot-vertical-jump4.uasset",
-			"ChunkId": "7066ed83ea3ee0b800000001"
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/front/front.uasset",
+			"ChunkId": "243266e7bf3994e300000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/fire-shot/shot4.uasset",
@@ -797,8 +1089,8 @@
 			"ChunkId": "6433b06a6ce5795d00000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/back/back.uasset",
-			"ChunkId": "6ea43551d1f7b36700000001"
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crouch/chibi-robot-crouch2.uasset",
+			"ChunkId": "faac3e88409ba89200000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/atlas.uasset",
@@ -813,8 +1105,8 @@
 			"ChunkId": "e7b4926f791c07a200000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crawl/chibi-robot-crawl2.uasset",
-			"ChunkId": "bfdac02eaf4bc1b500000001"
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/vertical-jump/chibi-robot-vertical-jump4.uasset",
+			"ChunkId": "7066ed83ea3ee0b800000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/vertical-jump/chibi-robot-vertical-jump3.uasset",
@@ -861,8 +1153,20 @@
 			"ChunkId": "38a49f55491f393f00000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crouch/chibi-robot-crouch2.uasset",
-			"ChunkId": "faac3e88409ba89200000001"
+			"Path": "Mechbot/Content/Textures/Background/wall_window/template_1a_Sprite.uasset",
+			"ChunkId": "b4f856f418f7d75e00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Background/wall_shutter/shut_2_Sprite.uasset",
+			"ChunkId": "924121bb4326bc7c00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Bullets/BaseSpecial/projetilNew.uasset",
+			"ChunkId": "038c4b6f3e76800700000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Bullets/BaseBullet/EnergyBall.uasset",
+			"ChunkId": "a52c51bf3031c87100000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crouch/chibi-robot-crouch1.uasset",
@@ -877,8 +1181,8 @@
 			"ChunkId": "ab1214c4107c406500000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Background/mechanical/mechanical_4.uasset",
-			"ChunkId": "1fc4e719b647158500000001"
+			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crawl/chibi-robot-crawl2.uasset",
+			"ChunkId": "bfdac02eaf4bc1b500000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crawl/chibi-robot-crawl1.uasset",
@@ -933,12 +1237,32 @@
 			"ChunkId": "beb9a0749c01614700000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Bullets/BaseSpecial/projetilNew.uasset",
-			"ChunkId": "038c4b6f3e76800700000001"
+			"Path": "Mechbot/Content/Textures/Background/wall_shutter/shut_1_Sprite.uasset",
+			"ChunkId": "2350901ec208656e00000001"
 		},
 		{
-			"Path": "Mechbot/Content/Textures/Bullets/BaseBullet/EnergyBall.uasset",
-			"ChunkId": "a52c51bf3031c87100000001"
+			"Path": "Mechbot/Content/Textures/Background/wall_shutter/open_2_Sprite.uasset",
+			"ChunkId": "adc73bc054a53add00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Background/wall_shutter/open_1_Sprite.uasset",
+			"ChunkId": "281840bb08223d9400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Background/mechanical/mechanical_4_Sprite.uasset",
+			"ChunkId": "b84049d4e30133f600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Background/mechanical/mechanical_2_Sprite.uasset",
+			"ChunkId": "17fcc3a3ae162b4000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Background/city_night/back_4_Sprite.uasset",
+			"ChunkId": "f3335e8ee99e8e0800000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Background/Preview_city+wall_window_2_Sprite.uasset",
+			"ChunkId": "3447c58e8a97de5300000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Background/wall_shutter/shut_2.uasset",
@@ -957,8 +1281,8 @@
 			"ChunkId": "b9843bc267dc8f7e00000001"
 		},
 		{
-			"Path": "Engine/Content/EngineMaterials/DefaultCalibrationGrayscale.uasset",
-			"ChunkId": "b916d415e9289b5500000001"
+			"Path": "Mechbot/Content/Textures/Background/mechanical/mechanical_4.uasset",
+			"ChunkId": "1fc4e719b647158500000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Background/mechanical/mechanical_3.uasset",
@@ -979,6 +1303,10 @@
 		{
 			"Path": "Mechbot/Content/Sound/SFX/Arcade_Positive_Feedback_02_2.ubulk",
 			"ChunkId": "2469093ffa2bd9c200000002"
+		},
+		{
+			"Path": "Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset",
+			"ChunkId": "2a8ace463a029fae00000001"
 		},
 		{
 			"Path": "Mechbot/Content/Sound/SFX/8_bit_Shiny_Swell_02_3.uasset",
@@ -1061,12 +1389,16 @@
 			"ChunkId": "315a130c31656b3e00000002"
 		},
 		{
-			"Path": "Mechbot/Content/Sound/Music/Raw/xDeviruchi_-_And_The_Journey_Begins_.uasset",
-			"ChunkId": "b9c8b1a32868d73d00000001"
+			"Path": "Engine/Content/EngineMaterials/DefaultCalibrationGrayscale.uasset",
+			"ChunkId": "b916d415e9289b5500000001"
 		},
 		{
-			"Path": "Mechbot/Content/Sound/Music/Raw/xDeviruchi_-_And_The_Journey_Begins_.ubulk",
-			"ChunkId": "b9c8b1a32868d73d00000002"
+			"Path": "Engine/Content/EngineMaterials/DefaultCalibrationColor.uasset",
+			"ChunkId": "c8548e53bc64ae9400000001"
+		},
+		{
+			"Path": "Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset",
+			"ChunkId": "c472a8877b0ae2f900000001"
 		},
 		{
 			"Path": "Engine/Content/EngineSounds/Submixes/MasterEQEffectPreset.uasset",
@@ -1101,28 +1433,16 @@
 			"ChunkId": "6ebbe4a6ced841cc00000001"
 		},
 		{
-			"Path": "Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset",
-			"ChunkId": "3bf2df25e14476d700000001"
-		},
-		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset",
 			"ChunkId": "4762b775bfe4b22d00000001"
 		},
 		{
+			"Path": "Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset",
+			"ChunkId": "3bf2df25e14476d700000001"
+		},
+		{
 			"Path": "Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset",
 			"ChunkId": "305a1ec18dd5a4be00000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/DefaultCalibrationColor.uasset",
-			"ChunkId": "c8548e53bc64ae9400000001"
-		},
-		{
-			"Path": "Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset",
-			"ChunkId": "c472a8877b0ae2f900000001"
-		},
-		{
-			"Path": "Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset",
-			"ChunkId": "2a8ace463a029fae00000001"
 		},
 		{
 			"Path": "Engine/Plugins/Animation/ControlRig/Content/M_Manip.uasset",
@@ -1139,6 +1459,14 @@
 		{
 			"Path": "Engine/Content/EngineFonts/Roboto.uasset",
 			"ChunkId": "08578f8490e5c66d00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Sound/Music/Raw/xDeviruchi_-_And_The_Journey_Begins_.uasset",
+			"ChunkId": "b9c8b1a32868d73d00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Sound/Music/Raw/xDeviruchi_-_And_The_Journey_Begins_.ubulk",
+			"ChunkId": "b9c8b1a32868d73d00000002"
 		},
 		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset",
@@ -1373,6 +1701,98 @@
 			"ChunkId": "c06ed9af246d049700000001"
 		},
 		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/Font/Planes_ValMore_Font.uasset",
+			"ChunkId": "9fe2709c7bf8c6e600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_5.uasset",
+			"ChunkId": "0c6a3dedf325f93d00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_4.uasset",
+			"ChunkId": "c270641c00f5ba2b00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_3.uasset",
+			"ChunkId": "5e4bc034e937b9fb00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_2.uasset",
+			"ChunkId": "f8a13fd03a99ad0500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_1.uasset",
+			"ChunkId": "8c4a891a76cf5e4c00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_0.uasset",
+			"ChunkId": "dba4f11e460cb17500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_7.uasset",
+			"ChunkId": "200498db1a86edaa00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_6.uasset",
+			"ChunkId": "f3352d3810c7fac800000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_5.uasset",
+			"ChunkId": "734c4d53c34b195200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_4.uasset",
+			"ChunkId": "034bb09762290f0500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_3.uasset",
+			"ChunkId": "0553cab8e5809adf00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_2.uasset",
+			"ChunkId": "dc471ef481bd5c5a00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_1.uasset",
+			"ChunkId": "8e76fcf9165a1c0500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_0.uasset",
+			"ChunkId": "cd7572912742bbb500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_3.uasset",
+			"ChunkId": "568b1b45e470a44100000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_2.uasset",
+			"ChunkId": "3cfbb2606e8d2dcd00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_1.uasset",
+			"ChunkId": "7883c037f668713e00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_0.uasset",
+			"ChunkId": "89e9a59e32709c8300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_3.uasset",
+			"ChunkId": "249e841fae1cba0b00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_2.uasset",
+			"ChunkId": "df0a13ea737d3a3500000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_1.uasset",
+			"ChunkId": "1eb3486da5c9a5b600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_0.uasset",
+			"ChunkId": "658ac85479483c7600000001"
+		},
+		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/run/chibi-robot6_Sprite.uasset",
 			"ChunkId": "24b7515789b6cdbb00000001"
 		},
@@ -1547,6 +1967,86 @@
 		{
 			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Sprites/Bug_Hulk-Sheet_Roll_Sprite_0.uasset",
 			"ChunkId": "adc3236e2828501f00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_6.uasset",
+			"ChunkId": "053efe693e009fc000000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_5.uasset",
+			"ChunkId": "b7e3b7298a7374fa00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_4.uasset",
+			"ChunkId": "67b146562263dc2600000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_3.uasset",
+			"ChunkId": "52863ca8d870720a00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_2.uasset",
+			"ChunkId": "cf622e8e68d429b700000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_1.uasset",
+			"ChunkId": "191f2f4485c839ca00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_0.uasset",
+			"ChunkId": "86041644c69a6e8f00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_4.uasset",
+			"ChunkId": "dbac540b81ab2a8c00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_3.uasset",
+			"ChunkId": "464b3d6e4edaa8ef00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_2.uasset",
+			"ChunkId": "af5ac3548f36318c00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_1.uasset",
+			"ChunkId": "e3b0f695146b246a00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_0.uasset",
+			"ChunkId": "b6bc029172f739a400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_7.uasset",
+			"ChunkId": "d4b565dcf0908d3300000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_6.uasset",
+			"ChunkId": "003abf2a8b35334a00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_5.uasset",
+			"ChunkId": "169fff6bfb76408700000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_4.uasset",
+			"ChunkId": "1d162b2b349cd30f00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_3.uasset",
+			"ChunkId": "60c5bd2dff52c94d00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_2.uasset",
+			"ChunkId": "349aee6c517d364e00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_1.uasset",
+			"ChunkId": "482122a9243d9cab00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_0.uasset",
+			"ChunkId": "ff78de99accc424c00000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Door_48x48/Sprites/Close_Vertical_Sprite_9.uasset",
@@ -2329,6 +2829,22 @@
 			"ChunkId": "aaca96481f395bca00000001"
 		},
 		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Walk.uasset",
+			"ChunkId": "8c30a793b3aa996400000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Jump.uasset",
+			"ChunkId": "067d7cf7acaf254e00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Idle.uasset",
+			"ChunkId": "94e81226b23b126200000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Attack1.uasset",
+			"ChunkId": "bf73f6e7753a063100000001"
+		},
+		{
 			"Path": "Mechbot/Content/Textures/Droids/chibi-robot/chibi-robot_files/run/FB_Chibi-Robot_Run.uasset",
 			"ChunkId": "21edb7cba0bfb5ca00000001"
 		},
@@ -2375,6 +2891,18 @@
 		{
 			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/Flipbooks/FB_Bug_Hulk-Roll.uasset",
 			"ChunkId": "c612e5d07522487700000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/FB_BugHulk_Walk.uasset",
+			"ChunkId": "51059b96ed11b18b00000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/FB_Bug_Hulk-Slash.uasset",
+			"ChunkId": "d316b833a91ce3f900000001"
+		},
+		{
+			"Path": "Mechbot/Content/Textures/Droids/Bug_Hulk/FB_Bug_Hulk-Roll.uasset",
+			"ChunkId": "26900eabda36829000000001"
 		},
 		{
 			"Path": "Mechbot/Content/Textures/Checkpoint_64x64/Flipbooks/FB_Checkpoint_Idle_Close.uasset",
@@ -2611,10 +3139,6 @@
 			"PackageChunkId": "f0a7f83421ac425b00000001"
 		},
 		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector",
-			"PackageChunkId": "5f510b7cd6e0bdc800000001"
-		},
-		{
 			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeBillboard",
 			"PackageChunkId": "8fcb1cae0c92026900000001"
 		},
@@ -2625,6 +3149,22 @@
 		{
 			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeCameraFacing",
 			"PackageChunkId": "a8a408dbac6bb61700000001"
+		},
+		{
+			"Name": "/SpeedTreeImporter/SpeedTree9/UnpackInteger3",
+			"PackageChunkId": "7b967f8ff09764ce00000001"
+		},
+		{
+			"Name": "/SpeedTreeImporter/SpeedTree9/UnpackDirection",
+			"PackageChunkId": "931f8593c76b1a3700000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture",
+			"PackageChunkId": "b60fa590a5fe4d6f00000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/BaseFlattenNormalMap",
+			"PackageChunkId": "c18dd883a0c55c8b00000001"
 		},
 		{
 			"Name": "/Engine/EngineResources/FilmGrains/Marcie_Grain_v3_128_M2_000",
@@ -2660,74 +3200,6 @@
 		{
 			"Name": "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq",
 			"PackageChunkId": "1c3a80931d7381bf00000001"
-		},
-		{
-			"Name": "/SpeedTreeImporter/SpeedTree9/UnpackInteger3",
-			"PackageChunkId": "7b967f8ff09764ce00000001"
-		},
-		{
-			"Name": "/SpeedTreeImporter/SpeedTree9/UnpackDirection",
-			"PackageChunkId": "931f8593c76b1a3700000001"
-		},
-		{
-			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeWindMotion",
-			"PackageChunkId": "3bd77c49df92ee7b00000001"
-		},
-		{
-			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeBranchMotion",
-			"PackageChunkId": "bb0c9910913c4acc00000001"
-		},
-		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
-			"PackageChunkId": "3f4f90b51972562400000001"
-		},
-		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize",
-			"PackageChunkId": "b2e55f36209c19b000000001"
-		},
-		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/ObjectLocalBounds",
-			"PackageChunkId": "8d4486caf50605b200000001"
-		},
-		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset",
-			"PackageChunkId": "84ee12d7bc5f5a8000000001"
-		},
-		{
-			"Name": "/ControlRig/Controls/DefaultGizmoLibraryNormalized",
-			"PackageChunkId": "c1ceadea19a929af00000001"
-		},
-		{
-			"Name": "/Engine/Tutorial/ContentIntroCurve",
-			"PackageChunkId": "3cf25e9da31d4f2a00000001"
-		},
-		{
-			"Name": "/HairStrands/Materials/HairMeshesDefaultMaterial",
-			"PackageChunkId": "a325708448a8980800000001"
-		},
-		{
-			"Name": "/HairStrands/Materials/HairCardsDefaultMaterial",
-			"PackageChunkId": "a257a4a1759b7c6d00000001"
-		},
-		{
-			"Name": "/HairStrands/Materials/HairDefaultMaterial",
-			"PackageChunkId": "7bae9d93c88ae44900000001"
-		},
-		{
-			"Name": "/SpeedTreeImporter/SpeedTree9/EmptyNormal",
-			"PackageChunkId": "6f3a7c0fe1cf64ce00000001"
-		},
-		{
-			"Name": "/SpeedTreeImporter/SpeedTree9/Empty",
-			"PackageChunkId": "efd3b99beb745ea100000001"
-		},
-		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture",
-			"PackageChunkId": "b60fa590a5fe4d6f00000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/BaseFlattenNormalMap",
-			"PackageChunkId": "c18dd883a0c55c8b00000001"
 		},
 		{
 			"Name": "/Engine/EngineMaterials/Black_1x1_EXR_Texture_VT",
@@ -2781,8 +3253,60 @@
 			"PackageChunkId": "8500a33b2fedbab800000001"
 		},
 		{
-			"Name": "/Engine/EngineDebugMaterials/VolumeToRender",
-			"PackageChunkId": "7f8259be57e87dce00000001"
+			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeWindMotion",
+			"PackageChunkId": "3bd77c49df92ee7b00000001"
+		},
+		{
+			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeBranchMotion",
+			"PackageChunkId": "bb0c9910913c4acc00000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+			"PackageChunkId": "3f4f90b51972562400000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize",
+			"PackageChunkId": "b2e55f36209c19b000000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/ObjectLocalBounds",
+			"PackageChunkId": "8d4486caf50605b200000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector",
+			"PackageChunkId": "5f510b7cd6e0bdc800000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset",
+			"PackageChunkId": "84ee12d7bc5f5a8000000001"
+		},
+		{
+			"Name": "/ControlRig/Controls/DefaultGizmoLibraryNormalized",
+			"PackageChunkId": "c1ceadea19a929af00000001"
+		},
+		{
+			"Name": "/Engine/Tutorial/ContentIntroCurve",
+			"PackageChunkId": "3cf25e9da31d4f2a00000001"
+		},
+		{
+			"Name": "/HairStrands/Materials/HairMeshesDefaultMaterial",
+			"PackageChunkId": "a325708448a8980800000001"
+		},
+		{
+			"Name": "/HairStrands/Materials/HairCardsDefaultMaterial",
+			"PackageChunkId": "a257a4a1759b7c6d00000001"
+		},
+		{
+			"Name": "/HairStrands/Materials/HairDefaultMaterial",
+			"PackageChunkId": "7bae9d93c88ae44900000001"
+		},
+		{
+			"Name": "/SpeedTreeImporter/SpeedTree9/EmptyNormal",
+			"PackageChunkId": "6f3a7c0fe1cf64ce00000001"
+		},
+		{
+			"Name": "/SpeedTreeImporter/SpeedTree9/Empty",
+			"PackageChunkId": "efd3b99beb745ea100000001"
 		},
 		{
 			"Name": "/SpeedTreeImporter/SpeedTree9/game_wind_noise",
@@ -2790,6 +3314,10 @@
 			"BulkDataChunkIds": [
 				"27d3dbbd9cb5875a00000002"
 			]
+		},
+		{
+			"Name": "/Engine/EngineDebugMaterials/VolumeToRender",
+			"PackageChunkId": "7f8259be57e87dce00000001"
 		},
 		{
 			"Name": "/Paper2D/PlaceholderTextures/DummySpriteTexture",
@@ -2827,6 +3355,18 @@
 			"PackageChunkId": "a06a91154845992200000001"
 		},
 		{
+			"Name": "/HairStrands/Materials/HairGroupColors",
+			"PackageChunkId": "55c5d73fec0135d200000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/HairDebugColor",
+			"PackageChunkId": "8efe6173efa8192200000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/HairColorMap",
+			"PackageChunkId": "2c913f2705b478d900000001"
+		},
+		{
 			"Name": "/Engine/EngineDamageTypes/DmgTypeBP_Environmental",
 			"PackageChunkId": "79688f0e793acea100000001"
 		},
@@ -2845,18 +3385,6 @@
 		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
 			"PackageChunkId": "a29fb34f83f7d31a00000001"
-		},
-		{
-			"Name": "/HairStrands/Materials/HairGroupColors",
-			"PackageChunkId": "55c5d73fec0135d200000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/HairDebugColor",
-			"PackageChunkId": "8efe6173efa8192200000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/HairColorMap",
-			"PackageChunkId": "2c913f2705b478d900000001"
 		},
 		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
@@ -2879,15 +3407,15 @@
 			"PackageChunkId": "474711309ee6ba8900000001"
 		},
 		{
+			"Name": "/Engine/EngineSky/VolumetricClouds/T_VolumeNoiseShape64",
+			"PackageChunkId": "730711032edb546300000001"
+		},
+		{
 			"Name": "/Engine/EngineMeshes/Sphere",
 			"PackageChunkId": "f421d8f857b9ed0300000001",
 			"BulkDataChunkIds": [
 				"f421d8f857b9ed0300000002"
 			]
-		},
-		{
-			"Name": "/Game/Textures/UI/Font/Planes_ValMore",
-			"PackageChunkId": "1a236b77a8bc766f00000001"
 		},
 		{
 			"Name": "/Engine/EngineResources/GradientTexture0",
@@ -2901,12 +3429,42 @@
 			]
 		},
 		{
-			"Name": "/Engine/EngineSky/VolumetricClouds/T_VolumeNoiseShape64",
-			"PackageChunkId": "730711032edb546300000001"
+			"Name": "/Engine/EngineSky/VolumetricClouds/T_VolumeNoiseErosion32",
+			"PackageChunkId": "e21a9990b0ff22d600000001"
 		},
 		{
 			"Name": "/Engine/EngineFonts/RobotoDistanceField",
 			"PackageChunkId": "52a5c49a743a12b500000001"
+		},
+		{
+			"Name": "/Game/Textures/UI/Font/Planes_ValMore",
+			"PackageChunkId": "1a236b77a8bc766f00000001"
+		},
+		{
+			"Name": "/Engine/EngineSky/VolumetricClouds/CloudWeatherTexture",
+			"PackageChunkId": "b3b465c34fc83f8e00000001"
+		},
+		{
+			"Name": "/Engine/EngineSky/VolumetricClouds/CloudGradientTexture",
+			"PackageChunkId": "d28cf23bc747e18000000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/DefaultDiffuse",
+			"PackageChunkId": "7539f12095a3f0d100000001",
+			"BulkDataChunkIds": [
+				"7539f12095a3f0d100000002"
+			]
+		},
+		{
+			"Name": "/Engine/EngineSky/VolumetricClouds/T_NoiseErosion",
+			"PackageChunkId": "92d47df83dccf7d800000001",
+			"BulkDataChunkIds": [
+				"92d47df83dccf7d800000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling3",
+			"PackageChunkId": "32c380496951ef0800000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling2",
@@ -2923,36 +3481,6 @@
 		{
 			"Name": "/Game/Textures/UI/Button/Hover",
 			"PackageChunkId": "2fa26e8fb9e0130e00000001"
-		},
-		{
-			"Name": "/Engine/EngineResources/WhiteSquareTexture",
-			"PackageChunkId": "b85ee5fd59f4dd2000000001"
-		},
-		{
-			"Name": "/Engine/EngineSky/VolumetricClouds/T_NoiseErosion",
-			"PackageChunkId": "92d47df83dccf7d800000001",
-			"BulkDataChunkIds": [
-				"92d47df83dccf7d800000002"
-			]
-		},
-		{
-			"Name": "/Engine/EngineSky/VolumetricClouds/T_VolumeNoiseErosion32",
-			"PackageChunkId": "e21a9990b0ff22d600000001"
-		},
-		{
-			"Name": "/Engine/EngineSky/VolumetricClouds/CloudWeatherTexture",
-			"PackageChunkId": "b3b465c34fc83f8e00000001"
-		},
-		{
-			"Name": "/Engine/EngineSky/VolumetricClouds/CloudGradientTexture",
-			"PackageChunkId": "d28cf23bc747e18000000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/DefaultDiffuse",
-			"PackageChunkId": "7539f12095a3f0d100000001",
-			"BulkDataChunkIds": [
-				"7539f12095a3f0d100000002"
-			]
 		},
 		{
 			"Name": "/Engine/EngineMaterials/T_Default_Material_Grid_N",
@@ -2981,15 +3509,19 @@
 			"PackageChunkId": "3e6f2bc6739d380300000001"
 		},
 		{
+			"Name": "/Engine/EngineResources/Black",
+			"PackageChunkId": "cda0cf6115260c9400000001"
+		},
+		{
+			"Name": "/Engine/EngineResources/WhiteSquareTexture",
+			"PackageChunkId": "b85ee5fd59f4dd2000000001"
+		},
+		{
 			"Name": "/Engine/EngineResources/DefaultTexture",
 			"PackageChunkId": "6baf53cf79c0948b00000001",
 			"BulkDataChunkIds": [
 				"6baf53cf79c0948b00000002"
 			]
-		},
-		{
-			"Name": "/Engine/EngineResources/Black",
-			"PackageChunkId": "cda0cf6115260c9400000001"
 		},
 		{
 			"Name": "/Game/Textures/Weapons/LaserWeapon",
@@ -3076,18 +3608,6 @@
 			"PackageChunkId": "d4c4b70e6dc44e2000000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/run-shot/run-shot5",
-			"PackageChunkId": "469afb56ed0cf35600000001"
-		},
-		{
-			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-bite/sprites/rino-fish-bite1",
-			"PackageChunkId": "6103bf98062b9bb600000001"
-		},
-		{
-			"Name": "/Game/Textures/Droids/GhostBot/Owlet_Monster_Walk_6",
-			"PackageChunkId": "c464bd32fdc7c43f00000001"
-		},
-		{
 			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling6",
 			"PackageChunkId": "15befc1712c035d000000001"
 		},
@@ -3100,12 +3620,28 @@
 			"PackageChunkId": "3211bad7c32d539e00000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-rolling/sprites/rino-fish-rolling3",
-			"PackageChunkId": "32c380496951ef0800000001"
-		},
-		{
 			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-jump/sprites/rino-fish-jump4",
 			"PackageChunkId": "12af8b54a29109c000000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/Font/Planes_ValMore",
+			"PackageChunkId": "5d24e7eb33daa07400000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Walk_Run_Push_Dust_6",
+			"PackageChunkId": "30c40b8078b0921900000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Rock2",
+			"PackageChunkId": "f6d3cf70432a7d6300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-bite/sprites/rino-fish-bite1",
+			"PackageChunkId": "6103bf98062b9bb600000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/GhostBot/Owlet_Monster_Walk_6",
+			"PackageChunkId": "c464bd32fdc7c43f00000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/Warped_Rino_Fish/rino-fish-jump/sprites/rino-fish-jump3",
@@ -3233,6 +3769,269 @@
 			"PackageChunkId": "9bfdbea046c8e50000000001"
 		},
 		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Walk_Run_Push_Dust_6",
+			"PackageChunkId": "09dafc033d9dbe7900000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Rock1",
+			"PackageChunkId": "11dafafc13730aa300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Walk_6",
+			"PackageChunkId": "0b88fa0401cfd13000000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Walk+Attack_6",
+			"PackageChunkId": "a40b662532323def00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Throw_4",
+			"PackageChunkId": "128b5cd8d7f602ee00000001",
+			"BulkDataChunkIds": [
+				"128b5cd8d7f602ee00000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Run_6",
+			"PackageChunkId": "7e7d215d0878a3bf00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Push_6",
+			"PackageChunkId": "b994e8782501086800000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Jump_8",
+			"PackageChunkId": "0cda5ebddab8787c00000001",
+			"BulkDataChunkIds": [
+				"0cda5ebddab8787c00000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Idle_4",
+			"PackageChunkId": "4d9285be4669efc200000001",
+			"BulkDataChunkIds": [
+				"4d9285be4669efc200000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Hurt_4",
+			"PackageChunkId": "bbca25679d31943400000001",
+			"BulkDataChunkIds": [
+				"bbca25679d31943400000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Death_8",
+			"PackageChunkId": "cef546e7e6f4a7a500000001",
+			"BulkDataChunkIds": [
+				"cef546e7e6f4a7a500000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Climb_4",
+			"PackageChunkId": "9f7b59b9470840c100000001",
+			"BulkDataChunkIds": [
+				"9f7b59b9470840c100000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Attack2_6",
+			"PackageChunkId": "4070edc691ddbf8700000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster_Attack1_4",
+			"PackageChunkId": "9e40ef84f8557c8d00000001",
+			"BulkDataChunkIds": [
+				"9e40ef84f8557c8d00000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Dude_Monster",
+			"PackageChunkId": "751ac501f7bc0adc00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/3_Dude_Monster/Double_Jump_Dust_5",
+			"PackageChunkId": "9571b4f84f9349d200000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Double_Jump_Dust_5",
+			"PackageChunkId": "0fba8a69a7827c9800000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Rock2",
+			"PackageChunkId": "61d9c9592f2055d600000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Rock1",
+			"PackageChunkId": "220d1350f15e01d000000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6",
+			"PackageChunkId": "96e03b2c545e044400000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk+Attack_6",
+			"PackageChunkId": "9fd79e809056b4f300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Throw_4",
+			"PackageChunkId": "1dcb95e926ebd35000000001",
+			"BulkDataChunkIds": [
+				"1dcb95e926ebd35000000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Run_6",
+			"PackageChunkId": "fc09883ab29bd7da00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Push_6",
+			"PackageChunkId": "5c6c1db498e789ab00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8",
+			"PackageChunkId": "d9b637d75833770200000001",
+			"BulkDataChunkIds": [
+				"d9b637d75833770200000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4",
+			"PackageChunkId": "1c4267f58f09a2a600000001",
+			"BulkDataChunkIds": [
+				"1c4267f58f09a2a600000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Hurt_4",
+			"PackageChunkId": "1b0dafb81e6e3e8200000001",
+			"BulkDataChunkIds": [
+				"1b0dafb81e6e3e8200000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Death_8",
+			"PackageChunkId": "4e8e74094257cb5b00000001",
+			"BulkDataChunkIds": [
+				"4e8e74094257cb5b00000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Climb_4",
+			"PackageChunkId": "ecfceba6203eccd900000001",
+			"BulkDataChunkIds": [
+				"ecfceba6203eccd900000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack2_6",
+			"PackageChunkId": "3b7d22fe5cb83fb900000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4",
+			"PackageChunkId": "1954cf1e63d5000300000001",
+			"BulkDataChunkIds": [
+				"1954cf1e63d5000300000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster",
+			"PackageChunkId": "8e165666fd1f996800000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster",
+			"PackageChunkId": "8858748c8c67c36300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Walk_Run_Push_Dust_6",
+			"PackageChunkId": "75c4901b9ecc34d000000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Rock2",
+			"PackageChunkId": "5f62fe8e9e88ae0300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Rock1",
+			"PackageChunkId": "409041741e1f97ec00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Walk_6",
+			"PackageChunkId": "6f804ed87fe145a100000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Walk+Attack_6",
+			"PackageChunkId": "6d3864312ac6b7ea00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Throw_4",
+			"PackageChunkId": "388ab7e4c52d508900000001",
+			"BulkDataChunkIds": [
+				"388ab7e4c52d508900000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Run_6",
+			"PackageChunkId": "15a95637c763807000000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Push_6",
+			"PackageChunkId": "33e0cc69394c04ed00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Jump_8",
+			"PackageChunkId": "ebc1b4b54b029ac000000001",
+			"BulkDataChunkIds": [
+				"ebc1b4b54b029ac000000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Idle_4",
+			"PackageChunkId": "3a320d6d4186169200000001",
+			"BulkDataChunkIds": [
+				"3a320d6d4186169200000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Hurt_4",
+			"PackageChunkId": "f4ab53c8597b60f300000001",
+			"BulkDataChunkIds": [
+				"f4ab53c8597b60f300000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Death_8",
+			"PackageChunkId": "0cd71b05db8edf1100000001",
+			"BulkDataChunkIds": [
+				"0cd71b05db8edf1100000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Climb_4",
+			"PackageChunkId": "833fa207e64d69a500000001",
+			"BulkDataChunkIds": [
+				"833fa207e64d69a500000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Attack2_6",
+			"PackageChunkId": "91139c8d9937a91300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Pink_Monster_Attack1_4",
+			"PackageChunkId": "8d5c56b75352d82a00000001",
+			"BulkDataChunkIds": [
+				"8d5c56b75352d82a00000002"
+			]
+		},
+		{
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/jump/chibi-robot1",
+			"PackageChunkId": "bed0438ae8b7471900000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/1_Pink_Monster/Double_Jump_Dust_5",
+			"PackageChunkId": "b136e392ae50aabd00000001"
+		},
+		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/stand-shot/stand-shot",
 			"PackageChunkId": "a5e310c9f0a913c800000001"
 		},
@@ -3241,8 +4040,8 @@
 			"PackageChunkId": "02a36ed128bb396000000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/front/front",
-			"PackageChunkId": "243266e7bf3994e300000001"
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/run-shot/run-shot5",
+			"PackageChunkId": "469afb56ed0cf35600000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/run-shot/run-shot4",
@@ -3289,8 +4088,8 @@
 			"PackageChunkId": "bdf3b573f723eb2d00000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/jump/chibi-robot1",
-			"PackageChunkId": "bed0438ae8b7471900000001"
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/back/back",
+			"PackageChunkId": "6ea43551d1f7b36700000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/idle/chibi-robot",
@@ -3305,8 +4104,8 @@
 			"PackageChunkId": "4e33f3c000999ad200000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/vertical-jump/chibi-robot-vertical-jump4",
-			"PackageChunkId": "7066ed83ea3ee0b800000001"
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/front/front",
+			"PackageChunkId": "243266e7bf3994e300000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/fire-shot/shot4",
@@ -3353,8 +4152,8 @@
 			"PackageChunkId": "6433b06a6ce5795d00000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/back/back",
-			"PackageChunkId": "6ea43551d1f7b36700000001"
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crouch/chibi-robot-crouch2",
+			"PackageChunkId": "faac3e88409ba89200000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/atlas",
@@ -3369,8 +4168,8 @@
 			"PackageChunkId": "e7b4926f791c07a200000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crawl/chibi-robot-crawl2",
-			"PackageChunkId": "bfdac02eaf4bc1b500000001"
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/vertical-jump/chibi-robot-vertical-jump4",
+			"PackageChunkId": "7066ed83ea3ee0b800000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/vertical-jump/chibi-robot-vertical-jump3",
@@ -3417,8 +4216,20 @@
 			"PackageChunkId": "38a49f55491f393f00000001"
 		},
 		{
-			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crouch/chibi-robot-crouch2",
-			"PackageChunkId": "faac3e88409ba89200000001"
+			"Name": "/Game/Textures/Background/wall_window/template_1a_Sprite",
+			"PackageChunkId": "b4f856f418f7d75e00000001"
+		},
+		{
+			"Name": "/Game/Textures/Background/wall_shutter/shut_2_Sprite",
+			"PackageChunkId": "924121bb4326bc7c00000001"
+		},
+		{
+			"Name": "/Game/Textures/Bullets/BaseSpecial/projetilNew",
+			"PackageChunkId": "038c4b6f3e76800700000001"
+		},
+		{
+			"Name": "/Game/Textures/Bullets/BaseBullet/EnergyBall",
+			"PackageChunkId": "a52c51bf3031c87100000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crouch/chibi-robot-crouch1",
@@ -3433,8 +4244,8 @@
 			"PackageChunkId": "ab1214c4107c406500000001"
 		},
 		{
-			"Name": "/Game/Textures/Background/mechanical/mechanical_4",
-			"PackageChunkId": "1fc4e719b647158500000001"
+			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crawl/chibi-robot-crawl2",
+			"PackageChunkId": "bfdac02eaf4bc1b500000001"
 		},
 		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot-extended-files/Sprites/crawl/chibi-robot-crawl1",
@@ -3485,12 +4296,32 @@
 			"PackageChunkId": "beb9a0749c01614700000001"
 		},
 		{
-			"Name": "/Game/Textures/Bullets/BaseSpecial/projetilNew",
-			"PackageChunkId": "038c4b6f3e76800700000001"
+			"Name": "/Game/Textures/Background/wall_shutter/shut_1_Sprite",
+			"PackageChunkId": "2350901ec208656e00000001"
 		},
 		{
-			"Name": "/Game/Textures/Bullets/BaseBullet/EnergyBall",
-			"PackageChunkId": "a52c51bf3031c87100000001"
+			"Name": "/Game/Textures/Background/wall_shutter/open_2_Sprite",
+			"PackageChunkId": "adc73bc054a53add00000001"
+		},
+		{
+			"Name": "/Game/Textures/Background/wall_shutter/open_1_Sprite",
+			"PackageChunkId": "281840bb08223d9400000001"
+		},
+		{
+			"Name": "/Game/Textures/Background/mechanical/mechanical_4_Sprite",
+			"PackageChunkId": "b84049d4e30133f600000001"
+		},
+		{
+			"Name": "/Game/Textures/Background/mechanical/mechanical_2_Sprite",
+			"PackageChunkId": "17fcc3a3ae162b4000000001"
+		},
+		{
+			"Name": "/Game/Textures/Background/city_night/back_4_Sprite",
+			"PackageChunkId": "f3335e8ee99e8e0800000001"
+		},
+		{
+			"Name": "/Game/Textures/Background/Preview_city+wall_window_2_Sprite",
+			"PackageChunkId": "3447c58e8a97de5300000001"
 		},
 		{
 			"Name": "/Game/Textures/Background/wall_shutter/shut_2",
@@ -3509,8 +4340,8 @@
 			"PackageChunkId": "b9843bc267dc8f7e00000001"
 		},
 		{
-			"Name": "/Engine/EngineMaterials/DefaultCalibrationGrayscale",
-			"PackageChunkId": "b916d415e9289b5500000001"
+			"Name": "/Game/Textures/Background/mechanical/mechanical_4",
+			"PackageChunkId": "1fc4e719b647158500000001"
 		},
 		{
 			"Name": "/Game/Textures/Background/mechanical/mechanical_3",
@@ -3530,6 +4361,10 @@
 			"BulkDataChunkIds": [
 				"2469093ffa2bd9c200000002"
 			]
+		},
+		{
+			"Name": "/Engine/MobileResources/HUD/VirtualJoystick_Thumb",
+			"PackageChunkId": "2a8ace463a029fae00000001"
 		},
 		{
 			"Name": "/Game/Sound/SFX/8_bit_Shiny_Swell_02_3",
@@ -3602,11 +4437,16 @@
 			]
 		},
 		{
-			"Name": "/Game/Sound/Music/Raw/xDeviruchi_-_And_The_Journey_Begins_",
-			"PackageChunkId": "b9c8b1a32868d73d00000001",
-			"BulkDataChunkIds": [
-				"b9c8b1a32868d73d00000002"
-			]
+			"Name": "/Engine/EngineMaterials/DefaultCalibrationGrayscale",
+			"PackageChunkId": "b916d415e9289b5500000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/DefaultCalibrationColor",
+			"PackageChunkId": "c8548e53bc64ae9400000001"
+		},
+		{
+			"Name": "/Engine/MobileResources/HUD/VirtualJoystick_Background",
+			"PackageChunkId": "c472a8877b0ae2f900000001"
 		},
 		{
 			"Name": "/Engine/EngineSounds/Submixes/MasterEQEffectPreset",
@@ -3641,28 +4481,16 @@
 			"PackageChunkId": "6ebbe4a6ced841cc00000001"
 		},
 		{
-			"Name": "/Engine/EngineDebugMaterials/M_VolumeRenderSphereTracePP",
-			"PackageChunkId": "3bf2df25e14476d700000001"
-		},
-		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
 			"PackageChunkId": "4762b775bfe4b22d00000001"
 		},
 		{
+			"Name": "/Engine/EngineDebugMaterials/M_VolumeRenderSphereTracePP",
+			"PackageChunkId": "3bf2df25e14476d700000001"
+		},
+		{
 			"Name": "/Engine/EngineMaterials/PhAT_JointLimitMaterial",
 			"PackageChunkId": "305a1ec18dd5a4be00000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/DefaultCalibrationColor",
-			"PackageChunkId": "c8548e53bc64ae9400000001"
-		},
-		{
-			"Name": "/Engine/MobileResources/HUD/VirtualJoystick_Background",
-			"PackageChunkId": "c472a8877b0ae2f900000001"
-		},
-		{
-			"Name": "/Engine/MobileResources/HUD/VirtualJoystick_Thumb",
-			"PackageChunkId": "2a8ace463a029fae00000001"
 		},
 		{
 			"Name": "/ControlRig/M_Manip",
@@ -3679,6 +4507,13 @@
 		{
 			"Name": "/Engine/EngineFonts/Roboto",
 			"PackageChunkId": "08578f8490e5c66d00000001"
+		},
+		{
+			"Name": "/Game/Sound/Music/Raw/xDeviruchi_-_And_The_Journey_Begins_",
+			"PackageChunkId": "b9c8b1a32868d73d00000001",
+			"BulkDataChunkIds": [
+				"b9c8b1a32868d73d00000002"
+			]
 		},
 		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW",
@@ -3913,6 +4748,98 @@
 			"PackageChunkId": "c06ed9af246d049700000001"
 		},
 		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/Font/Planes_ValMore_Font",
+			"PackageChunkId": "9fe2709c7bf8c6e600000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_5",
+			"PackageChunkId": "0c6a3dedf325f93d00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_4",
+			"PackageChunkId": "c270641c00f5ba2b00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_3",
+			"PackageChunkId": "5e4bc034e937b9fb00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_2",
+			"PackageChunkId": "f8a13fd03a99ad0500000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_1",
+			"PackageChunkId": "8c4a891a76cf5e4c00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Walk_6_Sprite_0",
+			"PackageChunkId": "dba4f11e460cb17500000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_7",
+			"PackageChunkId": "200498db1a86edaa00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_6",
+			"PackageChunkId": "f3352d3810c7fac800000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_5",
+			"PackageChunkId": "734c4d53c34b195200000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_4",
+			"PackageChunkId": "034bb09762290f0500000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_3",
+			"PackageChunkId": "0553cab8e5809adf00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_2",
+			"PackageChunkId": "dc471ef481bd5c5a00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_1",
+			"PackageChunkId": "8e76fcf9165a1c0500000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Jump_8_Sprite_0",
+			"PackageChunkId": "cd7572912742bbb500000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_3",
+			"PackageChunkId": "568b1b45e470a44100000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_2",
+			"PackageChunkId": "3cfbb2606e8d2dcd00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_1",
+			"PackageChunkId": "7883c037f668713e00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Idle_4_Sprite_0",
+			"PackageChunkId": "89e9a59e32709c8300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_3",
+			"PackageChunkId": "249e841fae1cba0b00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_2",
+			"PackageChunkId": "df0a13ea737d3a3500000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_1",
+			"PackageChunkId": "1eb3486da5c9a5b600000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/Owlet_Monster_Attack1_4_Sprite_0",
+			"PackageChunkId": "658ac85479483c7600000001"
+		},
+		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/run/chibi-robot6_Sprite",
 			"PackageChunkId": "24b7515789b6cdbb00000001"
 		},
@@ -4087,6 +5014,86 @@
 		{
 			"Name": "/Game/Textures/Droids/Bug_Hulk/Sprites/Bug_Hulk-Sheet_Roll_Sprite_0",
 			"PackageChunkId": "adc3236e2828501f00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_6",
+			"PackageChunkId": "053efe693e009fc000000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_5",
+			"PackageChunkId": "b7e3b7298a7374fa00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_4",
+			"PackageChunkId": "67b146562263dc2600000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_3",
+			"PackageChunkId": "52863ca8d870720a00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_2",
+			"PackageChunkId": "cf622e8e68d429b700000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_1",
+			"PackageChunkId": "191f2f4485c839ca00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Walk_Sprite_0",
+			"PackageChunkId": "86041644c69a6e8f00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_4",
+			"PackageChunkId": "dbac540b81ab2a8c00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_3",
+			"PackageChunkId": "464b3d6e4edaa8ef00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_2",
+			"PackageChunkId": "af5ac3548f36318c00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_1",
+			"PackageChunkId": "e3b0f695146b246a00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Slash_Sprite_0",
+			"PackageChunkId": "b6bc029172f739a400000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_7",
+			"PackageChunkId": "d4b565dcf0908d3300000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_6",
+			"PackageChunkId": "003abf2a8b35334a00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_5",
+			"PackageChunkId": "169fff6bfb76408700000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_4",
+			"PackageChunkId": "1d162b2b349cd30f00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_3",
+			"PackageChunkId": "60c5bd2dff52c94d00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_2",
+			"PackageChunkId": "349aee6c517d364e00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_1",
+			"PackageChunkId": "482122a9243d9cab00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/Bug_Hulk-Sheet_Roll_Sprite_0",
+			"PackageChunkId": "ff78de99accc424c00000001"
 		},
 		{
 			"Name": "/Game/Textures/Door_48x48/Sprites/Close_Vertical_Sprite_9",
@@ -4809,6 +5816,22 @@
 			"PackageChunkId": "aaca96481f395bca00000001"
 		},
 		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Walk",
+			"PackageChunkId": "8c30a793b3aa996400000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Jump",
+			"PackageChunkId": "067d7cf7acaf254e00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Idle",
+			"PackageChunkId": "94e81226b23b126200000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/free-pixel-art-tiny-hero-sprites/2_Owlet_Monster/FB_Owlet_Monster_Attack1",
+			"PackageChunkId": "bf73f6e7753a063100000001"
+		},
+		{
 			"Name": "/Game/Textures/Droids/chibi-robot/chibi-robot_files/run/FB_Chibi-Robot_Run",
 			"PackageChunkId": "21edb7cba0bfb5ca00000001"
 		},
@@ -4855,6 +5878,18 @@
 		{
 			"Name": "/Game/Textures/Droids/Bug_Hulk/Flipbooks/FB_Bug_Hulk-Roll",
 			"PackageChunkId": "c612e5d07522487700000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/FB_BugHulk_Walk",
+			"PackageChunkId": "51059b96ed11b18b00000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/FB_Bug_Hulk-Slash",
+			"PackageChunkId": "d316b833a91ce3f900000001"
+		},
+		{
+			"Name": "/Game/Textures/Droids/Bug_Hulk/FB_Bug_Hulk-Roll",
+			"PackageChunkId": "26900eabda36829000000001"
 		},
 		{
 			"Name": "/Game/Textures/Checkpoint_64x64/Flipbooks/FB_Checkpoint_Idle_Close",

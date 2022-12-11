@@ -138,6 +138,8 @@ Engine:Core.System:TestUnversionedPropertySerializationWhenCooking:0=False
 Engine:Core.System:DetailedCallstacksInNonMonolithicBuilds:0=True
 Engine:Core.System:UsePackageTrailer:0=False
 Engine:Core.System:HangDuration:0=0.0
+Engine:Core.System:AssetLogShowsDiskPath:0=True
+Engine:Core.System:AssetLogShowsAbsolutePath:0=True
 Engine:/Script/UdpMessaging.UdpMessagingSettings:EnabledByDefault:0=False
 Engine:/Script/UdpMessaging.UdpMessagingSettings:EnableTransport:0=True
 Engine:/Script/UdpMessaging.UdpMessagingSettings:bAutoRepair:0=True
@@ -620,7 +622,7 @@ Game:/Script/UnrealEd.ProjectPackagingSettings:PerPlatformBuildTarget:0=()
 Game:/Script/UnrealEd.ProjectPackagingSettings:Build:0=IfProjectHasCode
 Game:/Script/UnrealEd.ProjectPackagingSettings:BuildTarget:0=
 Game:/Script/UnrealEd.ProjectPackagingSettings:LaunchOnTarget:0=
-Game:/Script/UnrealEd.ProjectPackagingSettings:StagingDirectory:0=(Path="D/Mechbot")
+Game:/Script/UnrealEd.ProjectPackagingSettings:StagingDirectory:0=(Path="D/-Default/Documents/Unreal Projects/Mechbot/Executable")
 Game:/Script/UnrealEd.ProjectPackagingSettings:ForDistribution:0=False
 Game:/Script/UnrealEd.ProjectPackagingSettings:IncludeDebugFiles:0=False
 Game:/Script/UnrealEd.ProjectPackagingSettings:BlueprintNativizationMethod:0=Disabled
@@ -661,11 +663,7 @@ Game:/Script/UnrealEd.ProjectPackagingSettings:bChunkHardReferencesOnly:0=False
 Game:/Script/UnrealEd.ProjectPackagingSettings:IncludePrerequisites:0=True
 Game:/Script/UnrealEd.ProjectPackagingSettings:IncludeCrashReporter:0=False
 Game:/Script/UnrealEd.ProjectPackagingSettings:InternationalizationPreset:0=English
-<<<<<<< HEAD
 Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipEditorContent:0=True
-=======
-Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipEditorContent:0=false
->>>>>>> aa076cd (Cleanup and Finalizations)
 Game:/Script/UnrealEd.ProjectPackagingSettings:bSharedMaterialNativeLibraries:0=True
 Game:/Script/UnrealEd.ProjectPackagingSettings:bShareMaterialShaderCode:0=True
 Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipMovies:0=False
