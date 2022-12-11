@@ -13,8 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MECHBOT_MechGameInstance_generated_h
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_SPARSE_DATA
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_RPC_WRAPPERS \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_SPARSE_DATA
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execStartDeath); \
 	DECLARE_FUNCTION(execSetActiveCheckpoint); \
@@ -23,7 +23,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execGetLifeCount);
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execStartDeath); \
 	DECLARE_FUNCTION(execSetActiveCheckpoint); \
@@ -32,7 +32,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execGetLifeCount);
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMechGameInstance(); \
 	friend struct Z_Construct_UClass_UMechGameInstance_Statics; \
@@ -41,7 +41,7 @@ public: \
 	DECLARE_SERIALIZER(UMechGameInstance)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_INCLASS \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUMechGameInstance(); \
 	friend struct Z_Construct_UClass_UMechGameInstance_Statics; \
@@ -50,7 +50,7 @@ public: \
 	DECLARE_SERIALIZER(UMechGameInstance)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_STANDARD_CONSTRUCTORS \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMechGameInstance(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMechGameInstance) \
@@ -63,7 +63,7 @@ private: \
 public:
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UMechGameInstance(UMechGameInstance&&); \
@@ -74,25 +74,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UMechGameInstance)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_14_PROLOG
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_GENERATED_BODY_LEGACY \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_12_PROLOG
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_SPARSE_DATA \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_RPC_WRAPPERS \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_INCLASS \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_STANDARD_CONSTRUCTORS \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_SPARSE_DATA \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_RPC_WRAPPERS \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_INCLASS \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_GENERATED_BODY \
+#define FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_SPARSE_DATA \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_SPARSE_DATA \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

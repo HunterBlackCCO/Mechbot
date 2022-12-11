@@ -18,6 +18,8 @@ public:
 	// Sets default values for this actor's properties
 	AMechBullet();
 
+	// Commented out due to unexpected behaviors
+	// The below is currently set up in Blueprints but should be nativized at a future time
 	// Components
 	/*
 	UPROPERTY(VisibleAnywhere, Category = "Component")
@@ -34,9 +36,8 @@ public:
 	*/
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
+	// Object Configuration Settings
 	UPROPERTY(EditAnywhere, Category = "MechBullet")
 	bool bCanPierceEnemies;
 
@@ -46,10 +47,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "MechBullet")
 	uint8 Damage;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+public:
 
+	// Event Functions
 	UFUNCTION(BlueprintCallable)
 	void OnBeginOverlap(AActor* OtherActor);
 };

@@ -14,16 +14,18 @@ class MECHBOT_API AMechTool : public AMechUtility
 {
 	GENERATED_BODY()
 
+	// NOT YET IMPLEMENTED - Kept for future use
+
+	// Every Tool has a "Main Ability" and a "Special ability"
+	// "Main Abilities" are typically used to navigate the terrain
+	// "Special Abilities" will expend Player Energy to interact with Droids
+
 private:
 
 	bool bOnCooldown;
 
 public:
 	
-	// Every Tool has a "Main Ability" and a "Special ability"
-	// "Main Abilities" are typically used to navigate the terrain
-	// "Special Abilities" will expend Player Energy to interact with Droids
-
 	virtual void ActivateMainAbility(/*const FVector& StartLocation, const FVector& EndLocation*/);
 	virtual void ActivateSpecialAbility() override;
 

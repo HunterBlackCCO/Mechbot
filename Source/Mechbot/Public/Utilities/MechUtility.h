@@ -12,6 +12,10 @@ UCLASS()
 class MECHBOT_API AMechUtility : public AActor
 {
 	GENERATED_BODY()
+
+	// Every Utility has a "Main Ability" and a "Special Ability"
+	// "Main Abilities" are the Utility's primary function
+	// "Special Abilities" will expend Player Energy to do something interesting
 	
 public:	
 	// Sets default values for this actor's properties
@@ -27,15 +31,16 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Component")
 	UBoxComponent* BoxComponent;
 
-private:
-
-	FString Id;
-
 protected:
 
+	// Object Configuration Settings
 	UPROPERTY(EditDefaultsOnly, Category = "MechUtility", meta = (ClampMin = 0.0f))
 	float CooldownTimer;
 
+	UPROPERTY(EditDefaultsOnly)
+	uint8 SpecialEnergyCost;
+
+	// Sound FX Configuration Settings
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MechUtility|Sound")
 	USoundBase* MainActivationSFX;
 
@@ -48,26 +53,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "MechUtility|Sound", meta = (ClampMin = 0.0f, ClampMax = 2.0f))
 	float SpecialActivationSFXPitch;
 
-	// The Energy cost to the player to use the Special Ability
-	UPROPERTY(EditDefaultsOnly)
-	uint8 SpecialEnergyCost;
+public:
 
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Every Utility has a "Main Ability" and a "Special Ability"
-	// "Main Abilities" are the Utility's primary function
-	// "Special Abilities" will expend Player Energy to do something interesting
-	UFUNCTION()
-	virtual void ActivateMainAbility();
-	UFUNCTION()
-	virtual void ActivateSpecialAbility();
-
-	// This should be called in the Player class
+	// Public Read-only Getters - Should be called in the Player class
 	UFUNCTION(BlueprintPure, Category = "MechUtility|Special")
 	virtual bool CanUseSpecialAbility(const uint8 PlayerEnergy) const { return (PlayerEnergy >= SpecialEnergyCost); }
 
@@ -77,6 +65,13 @@ public:
 	UFUNCTION(BlueprintPure, Category = "MechUtility")
 	float GetCooldownTimer() const { return CooldownTimer; }
 
+	// Functions
 	UFUNCTION(BlueprintCallable)
 	virtual void GiveToPlayer(AActor* OtherActor);
+
+	UFUNCTION()
+	virtual void ActivateMainAbility();
+
+	UFUNCTION()
+	virtual void ActivateSpecialAbility();
 };

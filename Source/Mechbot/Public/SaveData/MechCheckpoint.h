@@ -7,6 +7,7 @@
 #include <Droids/MechPaperPlayer.h>
 #include "MechCheckpoint.generated.h"
 
+// Delegates
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnCreated);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnSave);
 
@@ -19,6 +20,7 @@ public:
 	// Sets default values for this actor's properties
 	AMechCheckpoint();
 
+	// Delegates
 	UPROPERTY(BlueprintAssignable)
 	FOnCreated OnCreated;
 
@@ -31,6 +33,7 @@ private:
 
 protected:
 
+	// Object Configuration Settings
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MechCheckpoint")
 	USoundBase* ActivationSFX;
 

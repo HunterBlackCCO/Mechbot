@@ -3,14 +3,12 @@
 #include "Utilities/MechUtility.h"
 #include <Kismet/GameplayStatics.h>
 
-// Sets default values
 AMechUtility::AMechUtility()
 {
+	// Initialize variables with default values
 	MainActivationSFXPitch = 1.0f;
 	SpecialActivationSFXPitch = 1.0f;
 	SpecialEnergyCost = 5;
-
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	// Initialize Base Component
@@ -32,33 +30,22 @@ AMechUtility::AMechUtility()
 	BoxComponent->SetupAttachment(RootComponent);
 }
 
-// Called when the game starts or when spawned
-void AMechUtility::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void AMechUtility::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
 void AMechUtility::ActivateMainAbility()
 {
+	// Child classes will handle main functionality
 	UGameplayStatics::SpawnSound2D(GetWorld(), MainActivationSFX, 0.7f, MainActivationSFXPitch);
 }
 
 void AMechUtility::ActivateSpecialAbility()
 {
 	// The check for a Player having enough energy to use the Utility should be done in the Player class
+	// Child classes will handle main functionality
 	UGameplayStatics::SpawnSound2D(GetWorld(), SpecialActivationSFX, 0.7f, SpecialActivationSFXPitch);
 }
 
 void AMechUtility::GiveToPlayer(AActor* OtherActor)
 {
+	// Child classes will handle main functionality
 	if (OtherActor)
 	{
 		// Hide the utility's in-world mesh and collision

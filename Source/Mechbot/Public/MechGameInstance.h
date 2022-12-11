@@ -4,8 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
-#include <Utilities/Tools/MechTool.h>
-#include <Utilities/Weapons/MechWeapon.h>
 #include "MechGameInstance.generated.h"
 
 /**
@@ -20,12 +18,15 @@ class MECHBOT_API UMechGameInstance : public UGameInstance
 
 private:
 
+	// Data we want to store across level reloads
+
 	uint8 Lives;
 	uint8 TotalCheckpoints;
 	uint8 ActiveCheckpoint;
 
 public:
 	
+	// Public Read-only Getters for private data
 	UFUNCTION(BlueprintPure, Category = "MechData")
 	uint8 GetLifeCount() const { return Lives; }
 
@@ -33,14 +34,17 @@ public:
 	uint8 GetActiveCheckpoint() const { return ActiveCheckpoint; }
 
 	uint8 GetTotalCheckpoints() const { return TotalCheckpoints; }
-	void AddCheckpoint() { TotalCheckpoints++; }
 
+	// Public Setters for private data
 	UFUNCTION(BlueprintCallable, Category = "MechData")
 	void SetLives(const uint8 NewLivesCount) { Lives = NewLivesCount; }
 
 	UFUNCTION(BlueprintCallable, Category = "MechData")
 	void SetActiveCheckpoint(const uint8 NewCheckpoint) { ActiveCheckpoint = NewCheckpoint; }
 
+	void AddCheckpoint() { TotalCheckpoints++; }
+	
+	// Functions
 	UFUNCTION(BlueprintCallable, Category = "MechData")
 	void StartDeath();
 };

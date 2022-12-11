@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\mechbotgamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\mechbot\\shipping\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealgame\\shipping\\mechbot\\definitions.mechbot.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\mechbotgamemodebase.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\serverstatreplicator.generated.h",
+            "d:\\games\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\gamemodebase.generated.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealgame\\inc\\mechbot\\mechbotgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

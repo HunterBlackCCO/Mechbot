@@ -3,15 +3,16 @@
 #include "Utilities/Weapons/MechWeapon.h"
 #include <Utilities/Weapons/Bullets/MechBullet.h>
 #include <Droids/MechPaperPlayer.h>
-#include <Kismet/GameplayStatics.h>
 
 void AMechWeapon::SpawnBullet(UClass* BulletClass)
 {
+	// Ensure bullet class is a valid type
 	if (!BulletClass || !BulletClass->IsChildOf(AMechBullet::StaticClass()))
 	{
 		return;
 	}
 	
+	// Set the Player as the owner to prevent self-damage and spawn the bullet
 	if (AMechPaperPlayer* Player = Cast<AMechPaperPlayer>(GetOwner()))
 	{
 		FActorSpawnParameters SpawnParameters = FActorSpawnParameters();

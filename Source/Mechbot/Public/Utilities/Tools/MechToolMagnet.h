@@ -14,4 +14,5 @@ class MECHBOT_API AMechToolMagnet : public AMechTool
 {
 	GENERATED_BODY()
 	
+	// NOT YET IMPLEMENTED - Kept for future use
 };

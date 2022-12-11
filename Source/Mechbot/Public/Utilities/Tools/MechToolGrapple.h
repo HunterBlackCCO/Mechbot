@@ -10,6 +10,8 @@ UCLASS()
 class MECHBOT_API AMechToolGrapple : public AActor
 {
 	GENERATED_BODY()
+
+	// NOT YET IMPLEMENTED - Kept for future use
 	
 public:	
 	// Sets default values for this actor's properties

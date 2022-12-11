@@ -2,24 +2,24 @@
 
 #include "Droids/MechPaperDroid.h"
 
-// Sets default values
 AMechPaperDroid::AMechPaperDroid()
 {
+	// Initialize variables with default values
 	MaxHealth = 100;
 	Health = MaxHealth;
-
-	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-// Called when the game starts or when spawned
 void AMechPaperDroid::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// Initialize variables with default values
 	bCanAttack = true;
 	bCanBeDamaged = true;
 	bCanMove = true;
+
+	// Initialize variables with configured values
 	Health = MaxHealth;
 }
 
@@ -30,9 +30,10 @@ void AMechPaperDroid::TakeDamage(const uint8 Amount)
 		return;
 	}
 
-	// Ensure value does not drop below 0
+	// Ensure Health value does not drop below 0
 	Health -= FMath::Min(Amount, Health);
 
+	// Check if this still has health
 	if (!IsAlive())
 	{
 		StartDeath();
@@ -50,20 +51,20 @@ void AMechPaperDroid::Heal(const uint8 Amount)
 
 	// Ensure value does not exceed MaxHealth
 	Health += FMath::Min(Amount, uint8(MaxHealth - Health));
-
 	SignalHealthUpdated();
 }
 
 void AMechPaperDroid::SignalHealthUpdated()
 {
+	// Notify others that the Health value has changed
 	const float NewPercentHealth = GetPercentHealth();
 	OnHealthUpdated.Broadcast(NewPercentHealth);
 }
 
 void AMechPaperDroid::StartDeath()
 {
+	// Begins the Death sequence
 	bCanBeDamaged = false;
-	// TODO - Destroy Collision, Start Death Animation, then OnAnimationFinished, Destroy Actor
 	OnDeath.Broadcast();
 }
 

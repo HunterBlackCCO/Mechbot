@@ -56,7 +56,9 @@ void EmptyLinkFunctionForGeneratedCodeMechWeapon() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechWeapon_Statics::NewProp_MainBullet_MetaData[] = {
 		{ "Category", "MechWeapon" },
+		{ "Comment", "// Object Configuration Settings\n" },
 		{ "ModuleRelativePath", "Public/Utilities/Weapons/MechWeapon.h" },
+		{ "ToolTip", "Object Configuration Settings" },
 	};
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMechWeapon_Statics::NewProp_MainBullet = { "MainBullet", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechWeapon, MainBullet), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMechWeapon_Statics::NewProp_MainBullet_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechWeapon_Statics::NewProp_MainBullet_MetaData)) };
@@ -107,9 +109,9 @@ void EmptyLinkFunctionForGeneratedCodeMechWeapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_MechWeapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechWeapon, AMechWeapon::StaticClass, TEXT("AMechWeapon"), &Z_Registration_Info_UClass_AMechWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechWeapon), 3434710974U) },
+		{ Z_Construct_UClass_AMechWeapon, AMechWeapon::StaticClass, TEXT("AMechWeapon"), &Z_Registration_Info_UClass_AMechWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechWeapon), 1165232147U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_MechWeapon_h_3824290102(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_MechWeapon_h_318739786(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_MechWeapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_MechWeapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\private\\utilities\\tools\\mechtoolgrapple.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\mechbot\\shipping\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealgame\\shipping\\mechbot\\definitions.mechbot.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\source\\mechbot\\public\\utilities\\tools\\mechtoolgrapple.h",
+            "d:\\-default\\documents\\unreal projects\\mechbot\\intermediate\\build\\win64\\unrealgame\\inc\\mechbot\\mechtoolgrapple.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

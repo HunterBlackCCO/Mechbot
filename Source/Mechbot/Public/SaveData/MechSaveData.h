@@ -9,6 +9,7 @@
 #include <Utilities/Weapons/MechWeapon.h>
 #include "MechSaveData.generated.h"
 
+// The name of the Save file
 #define SAVENAME "MechbotSave"
 
 /**
@@ -21,21 +22,24 @@ class MECHBOT_API UMechSaveData : public USaveGame
 
 public:
 
-	// Variables to save
+	// Data to save
 	UPROPERTY(BlueprintReadWrite)
 	uint8 Lives;
+
 	UPROPERTY(BlueprintReadWrite)
 	AMechCheckpoint* ActiveCheckpoint;
 
-	// Utilities
 	UPROPERTY(BlueprintReadWrite)
 	TArray<AMechTool*> ObtainedTools;
+
 	UPROPERTY(BlueprintReadWrite)
 	TArray<AMechWeapon*> ObtainedWeapons;
 
+	// Save functions
 	bool SaveData(const UWorld* World, AMechCheckpoint* Checkpoint, AMechPaperPlayer* Player);
 	void SaveDataAfterDeath(const UWorld* World, const uint8 LifeCount);
 	void SaveDataAfterGameWin(const UWorld* World, AMechPaperPlayer* Player);
 
+	// Load functions
 	bool LoadData(const UWorld* World, AMechPaperPlayer* Player);
 };

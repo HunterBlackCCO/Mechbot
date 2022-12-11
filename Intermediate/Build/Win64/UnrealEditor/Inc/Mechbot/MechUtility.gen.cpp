@@ -19,6 +19,20 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AMechUtility::execActivateSpecialAbility)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ActivateSpecialAbility();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AMechUtility::execActivateMainAbility)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ActivateMainAbility();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMechUtility::execGiveToPlayer)
 	{
 		P_GET_OBJECT(AActor,Z_Param_OtherActor);
@@ -49,20 +63,6 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 		*(bool*)Z_Param__Result=P_THIS->CanUseSpecialAbility(Z_Param_PlayerEnergy);
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(AMechUtility::execActivateSpecialAbility)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->ActivateSpecialAbility();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(AMechUtility::execActivateMainAbility)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->ActivateMainAbility();
-		P_NATIVE_END;
-	}
 	void AMechUtility::StaticRegisterNativesAMechUtility()
 	{
 		UClass* Class = AMechUtility::StaticClass();
@@ -85,9 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechUtility_ActivateMainAbility_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "// Every Utility has a \"Main Ability\" and a \"Special Ability\"\n// \"Main Abilities\" are the Utility's primary function\n// \"Special Abilities\" will expend Player Energy to do something interesting\n" },
 		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
-		{ "ToolTip", "Every Utility has a \"Main Ability\" and a \"Special Ability\"\n\"Main Abilities\" are the Utility's primary function\n\"Special Abilities\" will expend Player Energy to do something interesting" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechUtility_ActivateMainAbility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechUtility, nullptr, "ActivateMainAbility", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechUtility_ActivateMainAbility_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechUtility_ActivateMainAbility_Statics::Function_MetaDataParams)) };
@@ -159,9 +157,9 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MechUtility|Special" },
-		{ "Comment", "// This should be called in the Player class\n" },
+		{ "Comment", "// Public Read-only Getters - Should be called in the Player class\n" },
 		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
-		{ "ToolTip", "This should be called in the Player class" },
+		{ "ToolTip", "Public Read-only Getters - Should be called in the Player class" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechUtility, nullptr, "CanUseSpecialAbility", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::MechUtility_eventCanUseSpecialAbility_Parms), Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility_Statics::Function_MetaDataParams)) };
@@ -259,7 +257,9 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// Functions\n" },
 		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
+		{ "ToolTip", "Functions" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechUtility, nullptr, "GiveToPlayer", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::MechUtility_eventGiveToPlayer_Parms), Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechUtility_GiveToPlayer_Statics::Function_MetaDataParams)) };
@@ -301,6 +301,10 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_CooldownTimer;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpecialEnergyCost_MetaData[];
+#endif
+		static const UECodeGen_Private::FBytePropertyParams NewProp_SpecialEnergyCost;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MainActivationSFX_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_MainActivationSFX;
@@ -316,10 +320,6 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpecialActivationSFXPitch_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_SpecialActivationSFXPitch;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpecialEnergyCost_MetaData[];
-#endif
-		static const UECodeGen_Private::FBytePropertyParams NewProp_SpecialEnergyCost;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -329,12 +329,12 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Mechbot,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMechUtility_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMechUtility_ActivateMainAbility, "ActivateMainAbility" }, // 3006153016
+		{ &Z_Construct_UFunction_AMechUtility_ActivateMainAbility, "ActivateMainAbility" }, // 1054316420
 		{ &Z_Construct_UFunction_AMechUtility_ActivateSpecialAbility, "ActivateSpecialAbility" }, // 1903482694
-		{ &Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility, "CanUseSpecialAbility" }, // 3703698884
+		{ &Z_Construct_UFunction_AMechUtility_CanUseSpecialAbility, "CanUseSpecialAbility" }, // 2282781035
 		{ &Z_Construct_UFunction_AMechUtility_GetCooldownTimer, "GetCooldownTimer" }, // 53951284
 		{ &Z_Construct_UFunction_AMechUtility_GetSpecialEnergyCost, "GetSpecialEnergyCost" }, // 1749709856
-		{ &Z_Construct_UFunction_AMechUtility_GiveToPlayer, "GiveToPlayer" }, // 2937422432
+		{ &Z_Construct_UFunction_AMechUtility_GiveToPlayer, "GiveToPlayer" }, // 503149392
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechUtility_Statics::Class_MetaDataParams[] = {
@@ -372,14 +372,25 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechUtility_Statics::NewProp_CooldownTimer_MetaData[] = {
 		{ "Category", "MechUtility" },
 		{ "ClampMin", "0.000000" },
+		{ "Comment", "// Object Configuration Settings\n" },
 		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
+		{ "ToolTip", "Object Configuration Settings" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMechUtility_Statics::NewProp_CooldownTimer = { "CooldownTimer", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechUtility, CooldownTimer), METADATA_PARAMS(Z_Construct_UClass_AMechUtility_Statics::NewProp_CooldownTimer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechUtility_Statics::NewProp_CooldownTimer_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost_MetaData[] = {
+		{ "Category", "MechUtility" },
+		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
+	};
+#endif
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost = { "SpecialEnergyCost", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechUtility, SpecialEnergyCost), nullptr, METADATA_PARAMS(Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechUtility_Statics::NewProp_MainActivationSFX_MetaData[] = {
 		{ "Category", "MechUtility|Sound" },
+		{ "Comment", "// Sound FX Configuration Settings\n" },
 		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
+		{ "ToolTip", "Sound FX Configuration Settings" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMechUtility_Statics::NewProp_MainActivationSFX = { "MainActivationSFX", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechUtility, MainActivationSFX), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMechUtility_Statics::NewProp_MainActivationSFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechUtility_Statics::NewProp_MainActivationSFX_MetaData)) };
@@ -408,25 +419,16 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialActivationSFXPitch = { "SpecialActivationSFXPitch", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechUtility, SpecialActivationSFXPitch), METADATA_PARAMS(Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialActivationSFXPitch_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialActivationSFXPitch_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost_MetaData[] = {
-		{ "Category", "MechUtility" },
-		{ "Comment", "// The Energy cost to the player to use the Special Ability\n" },
-		{ "ModuleRelativePath", "Public/Utilities/MechUtility.h" },
-		{ "ToolTip", "The Energy cost to the player to use the Special Ability" },
-	};
-#endif
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost = { "SpecialEnergyCost", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechUtility, SpecialEnergyCost), nullptr, METADATA_PARAMS(Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMechUtility_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_BaseComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_PaperSpriteComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_BoxComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_CooldownTimer,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_MainActivationSFX,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_MainActivationSFXPitch,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialActivationSFX,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialActivationSFXPitch,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMechUtility_Statics::NewProp_SpecialEnergyCost,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMechUtility_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMechUtility>::IsAbstract,
@@ -464,9 +466,9 @@ void EmptyLinkFunctionForGeneratedCodeMechUtility() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechUtility, AMechUtility::StaticClass, TEXT("AMechUtility"), &Z_Registration_Info_UClass_AMechUtility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechUtility), 169215975U) },
+		{ Z_Construct_UClass_AMechUtility, AMechUtility::StaticClass, TEXT("AMechUtility"), &Z_Registration_Info_UClass_AMechUtility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechUtility), 2680740387U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_2208546897(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_209164439(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

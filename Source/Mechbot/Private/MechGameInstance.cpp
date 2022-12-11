@@ -6,6 +6,7 @@
 
 UMechGameInstance::UMechGameInstance()
 {
+	// Initialize variables with default values
 	Lives = 3;
 	TotalCheckpoints = 0;
 	ActiveCheckpoint = 0;
@@ -13,9 +14,10 @@ UMechGameInstance::UMechGameInstance()
 
 void UMechGameInstance::StartDeath()
 {
+	// Update Player life count
 	Lives--;
 
-	// Save our new Lives count
+	// Commit and save the change
 	UMechSaveData* SaveData = Cast<UMechSaveData>(UGameplayStatics::CreateSaveGameObject(UMechSaveData::StaticClass()));
 	if (!SaveData)
 	{

@@ -7,13 +7,14 @@
 
 AMechPaperPlayer::AMechPaperPlayer()
 {
-	// Energy
-	bCanUseTool = true;
+	// Initialize Energy variables with default values
 	MaxEnergy = 50;
 	Energy = MaxEnergy;
 	RechargeEnergyRate = MaxEnergy / 5;
 	RechargeEnergyTimer = 1.5f;
 
+	// Initialize Utility variables with default values
+	bCanUseTool = true;
 	EquippedWeaponSlot = 0;
 	EquippedToolSlot = 0;
 
@@ -26,7 +27,7 @@ void AMechPaperPlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Load Saved Data
+	// Create a SaveData object
 	UMechSaveData* SaveData = Cast<UMechSaveData>(UGameplayStatics::CreateSaveGameObject(UMechSaveData::StaticClass()));
 	if (!SaveData)
 	{
@@ -34,6 +35,7 @@ void AMechPaperPlayer::BeginPlay()
 		return;
 	}
 
+	// Notify others if any data was loaded
 	if (SaveData->LoadData(GetWorld(), this))
 	{
 		OnLoad.Broadcast();
@@ -47,36 +49,17 @@ void AMechPaperPlayer::TakeDamage(const uint8 Amount)
 	Super::TakeDamage(NewAmount);
 }
 
-void AMechPaperPlayer::RechargeEnergy()
-{
-	// Verify Player hasn't regained energy since the last check
-	if (Energy < MaxEnergy)
-	{
-		RegainEnergy(RechargeEnergyRate);
-
-		// Call itself until Energy is full
-		if (Energy < MaxEnergy)
-		{
-			// TODO - Delay Timer
-			RechargeEnergy();
-			return;
-		}
-	}
-}
-
 void AMechPaperPlayer::UseEnergy(const uint8 Amount)
 {
-	// Validate that the Player has enough Energy before this function is called
+	/** Pre-requisites - Validate that the Player has enough Energy BEFORE this function is called */
 
 	if (Amount == 0)
 	{
 		return;
 	}
 
-	// TODO - Clear Recharge Timer
-	// Ensure value does not drop below 0
+	// Ensure Energy value does not drop below 0
 	Energy -= FMath::Min(Amount, Energy);
-
 	SignalEnergyUpdated();
 }
 
@@ -87,20 +70,23 @@ void AMechPaperPlayer::RegainEnergy(const uint8 Amount)
 		return;
 	}
 
-	// Ensure value does not exceed MaxEnergy
+	// Ensure Energy value does not exceed MaxEnergy
 	Energy += FMath::Min(Amount, uint8(MaxEnergy - Energy));
-
 	SignalEnergyUpdated();
 }
 
 void AMechPaperPlayer::SignalEnergyUpdated()
 {
+	// Notify others that the Energy value has updated
 	const float NewPercentEnergy = GetPercentEnergy();
 	OnEnergyUpdated.Broadcast(NewPercentEnergy);
 }
 
 bool AMechPaperPlayer::HasUtility(const AMechUtility* Utility)
 {
+	// Generic function - seems tedious, may remove later
+
+	// Run the related check for the Utility type
 	if (const AMechWeapon* Weapon = Cast<AMechWeapon>(Utility))
 	{
 		return HasWeapon(Weapon);
@@ -165,7 +151,6 @@ void AMechPaperPlayer::AddWeapon(AMechWeapon* Weapon)
 	}
 
 	ObtainedWeapons.AddUnique(Weapon);
-
 	OnWeaponAdded.Broadcast(Weapon);
 }
 
@@ -177,7 +162,6 @@ void AMechPaperPlayer::AddTool(AMechTool* Tool)
 	}
 
 	ObtainedTools.AddUnique(Tool);
-
 	OnToolAdded.Broadcast(Tool);
 }
 
@@ -187,10 +171,9 @@ bool AMechPaperPlayer::IsUtilitySwapValid(const int32 UtilitiesSize, const uint8
 	return (NewSlot != EquippedSlot) && (NewSlot < UtilitiesSize);
 }
 
-/** Swaps the Player's equipped Tool to the Tool at the new slot number. */
 void AMechPaperPlayer::SwapEquippedTool(const uint8 ToolSlot)
 {
-	// Perform swap and signal listeners only if the swap is valid
+	// Perform swap and notify others only if the swap is valid
 	if (IsUtilitySwapValid(ObtainedTools.Num(), ToolSlot, EquippedToolSlot))
 	{
 		EquippedToolSlot = ToolSlot;
@@ -198,10 +181,9 @@ void AMechPaperPlayer::SwapEquippedTool(const uint8 ToolSlot)
 	}
 }
 
-/** Swaps the Player's equipped Weapon to the Weapon at the new slot number. */
 void AMechPaperPlayer::SwapEquippedWeapon(const uint8 WeaponSlot)
 {
-	// Perform swap and signal listeners only if the swap is valid
+	// Perform swap and notify others only if the swap is valid
 	if (IsUtilitySwapValid(ObtainedWeapons.Num(), WeaponSlot, EquippedWeaponSlot))
 	{
 		EquippedWeaponSlot = WeaponSlot;
@@ -225,7 +207,7 @@ void AMechPaperPlayer::ActivateEquippedToolMain()
 
 void AMechPaperPlayer::ActivateEquippedToolSpecial()
 {
-	// Activate the Tool's Special Ability if the equipped slot is valid and that Player has enough energy
+	// Activate the Tool's Special Ability if the equipped slot is valid and the Player has enough Energy
 	if (CanUseEquippedTool() && ObtainedTools[EquippedToolSlot]->CanUseSpecialAbility(Energy))
 	{
 		ObtainedTools[EquippedToolSlot]->ActivateSpecialAbility();
@@ -250,7 +232,7 @@ bool AMechPaperPlayer::ActivateEquippedWeaponMain()
 
 bool AMechPaperPlayer::ActivateEquippedWeaponSpecial()
 {
-	// Activate the Weapon's Special Ability if the equipped slot is valid and that Player has enough energy
+	// Activate the Weapon's Special Ability if the equipped slot is valid and that Player has enough Energy
 	if (CanUseEquippedWeapon() && ObtainedWeapons[EquippedWeaponSlot]->CanUseSpecialAbility(Energy))
 	{
 		ObtainedWeapons[EquippedWeaponSlot]->ActivateSpecialAbility();
@@ -294,7 +276,7 @@ bool AMechPaperPlayer::IsEquippedWeaponSlotValid()
 
 void AMechPaperPlayer::SaveOnWin()
 {
-	// Save Data for a NewGame+
+	// Create a SaveData Object
 	UMechSaveData* SaveData = Cast<UMechSaveData>(UGameplayStatics::CreateSaveGameObject(UMechSaveData::StaticClass()));
 	if (!SaveData)
 	{
@@ -302,5 +284,6 @@ void AMechPaperPlayer::SaveOnWin()
 		return;
 	}
 
+	// Save data for a NewGame+
 	SaveData->SaveDataAfterGameWin(GetWorld(), this);
 }

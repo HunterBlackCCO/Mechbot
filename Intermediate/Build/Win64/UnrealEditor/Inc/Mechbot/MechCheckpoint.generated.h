@@ -14,36 +14,36 @@ class AMechPaperPlayer;
 #endif
 #define MECHBOT_MechCheckpoint_generated_h
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_10_DELEGATE \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_11_DELEGATE \
 static inline void FOnCreated_DelegateWrapper(const FMulticastScriptDelegate& OnCreated) \
 { \
 	OnCreated.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_11_DELEGATE \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_12_DELEGATE \
 static inline void FOnSave_DelegateWrapper(const FMulticastScriptDelegate& OnSave) \
 { \
 	OnSave.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_SPARSE_DATA
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_RPC_WRAPPERS \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_SPARSE_DATA
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSaveProgress); \
 	DECLARE_FUNCTION(execIsCheckpointActive); \
 	DECLARE_FUNCTION(execGetId);
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSaveProgress); \
 	DECLARE_FUNCTION(execIsCheckpointActive); \
 	DECLARE_FUNCTION(execGetId);
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMechCheckpoint(); \
 	friend struct Z_Construct_UClass_AMechCheckpoint_Statics; \
@@ -52,7 +52,7 @@ public: \
 	DECLARE_SERIALIZER(AMechCheckpoint)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_INCLASS \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAMechCheckpoint(); \
 	friend struct Z_Construct_UClass_AMechCheckpoint_Statics; \
@@ -61,7 +61,7 @@ public: \
 	DECLARE_SERIALIZER(AMechCheckpoint)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_STANDARD_CONSTRUCTORS \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMechCheckpoint(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMechCheckpoint) \
@@ -74,7 +74,7 @@ private: \
 public:
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMechCheckpoint(AMechCheckpoint&&); \
@@ -85,25 +85,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMechCheckpoint)
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_13_PROLOG
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_GENERATED_BODY_LEGACY \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_14_PROLOG
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_SPARSE_DATA \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_RPC_WRAPPERS \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_INCLASS \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_STANDARD_CONSTRUCTORS \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_SPARSE_DATA \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_RPC_WRAPPERS \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_INCLASS \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_GENERATED_BODY \
+#define FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_SPARSE_DATA \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_SPARSE_DATA \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

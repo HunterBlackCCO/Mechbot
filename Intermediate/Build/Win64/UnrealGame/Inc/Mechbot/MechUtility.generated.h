@@ -17,22 +17,22 @@ class AActor;
 #define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_14_SPARSE_DATA
 #define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execActivateSpecialAbility); \
+	DECLARE_FUNCTION(execActivateMainAbility); \
 	DECLARE_FUNCTION(execGiveToPlayer); \
 	DECLARE_FUNCTION(execGetCooldownTimer); \
 	DECLARE_FUNCTION(execGetSpecialEnergyCost); \
-	DECLARE_FUNCTION(execCanUseSpecialAbility); \
-	DECLARE_FUNCTION(execActivateSpecialAbility); \
-	DECLARE_FUNCTION(execActivateMainAbility);
+	DECLARE_FUNCTION(execCanUseSpecialAbility);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execActivateSpecialAbility); \
+	DECLARE_FUNCTION(execActivateMainAbility); \
 	DECLARE_FUNCTION(execGiveToPlayer); \
 	DECLARE_FUNCTION(execGetCooldownTimer); \
 	DECLARE_FUNCTION(execGetSpecialEnergyCost); \
-	DECLARE_FUNCTION(execCanUseSpecialAbility); \
-	DECLARE_FUNCTION(execActivateSpecialAbility); \
-	DECLARE_FUNCTION(execActivateMainAbility);
+	DECLARE_FUNCTION(execCanUseSpecialAbility);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_Utilities_MechUtility_h_14_INCLASS_NO_PURE_DECLS \

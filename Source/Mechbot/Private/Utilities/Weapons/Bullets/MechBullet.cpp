@@ -3,12 +3,14 @@
 #include "Utilities/Weapons/Bullets/MechBullet.h"
 #include <Droids/MechPaperDroid.h>
 
-// Sets default values
 AMechBullet::AMechBullet()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Initialize variables with default values
 	PrimaryActorTick.bCanEverTick = true;
 	InitialLifeSpan = 3.0f;
+
+	// Commented out due to unexpected behaviors
+	// The below is currently set up in Blueprints but should be nativized at a future time
 	/*
 	// Initialize Base Component
 	BaseComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
@@ -37,23 +39,12 @@ AMechBullet::AMechBullet()
 	*/
 }
 
-// Called when the game starts or when spawned
-void AMechBullet::BeginPlay()
-{
-	Super::BeginPlay();
-}
-
-// Called every frame
-void AMechBullet::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
 void AMechBullet::OnBeginOverlap(AActor* OtherActor)
 {
+	// Make sure the overlapped actor is valid and not the one who spawned this
 	if (OtherActor && (OtherActor != GetOwner()))
 	{
+		// Damage enemy targets
 		if (AMechPaperDroid* Enemy = Cast<AMechPaperDroid>(OtherActor))
 		{
 			Enemy->TakeDamage(Damage);

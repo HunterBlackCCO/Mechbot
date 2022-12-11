@@ -50,7 +50,9 @@ void EmptyLinkFunctionForGeneratedCodeMechBullet() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// Event Functions\n" },
 		{ "ModuleRelativePath", "Public/Utilities/Weapons/Bullets/MechBullet.h" },
+		{ "ToolTip", "Event Functions" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMechBullet, nullptr, "OnBeginOverlap", nullptr, nullptr, sizeof(Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::MechBullet_eventOnBeginOverlap_Parms), Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMechBullet_OnBeginOverlap_Statics::Function_MetaDataParams)) };
@@ -98,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeMechBullet() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Mechbot,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMechBullet_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMechBullet_OnBeginOverlap, "OnBeginOverlap" }, // 2544544977
+		{ &Z_Construct_UFunction_AMechBullet_OnBeginOverlap, "OnBeginOverlap" }, // 1285510745
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechBullet_Statics::Class_MetaDataParams[] = {
@@ -109,7 +111,9 @@ void EmptyLinkFunctionForGeneratedCodeMechBullet() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechBullet_Statics::NewProp_bCanPierceEnemies_MetaData[] = {
 		{ "Category", "MechBullet" },
+		{ "Comment", "// Object Configuration Settings\n" },
 		{ "ModuleRelativePath", "Public/Utilities/Weapons/Bullets/MechBullet.h" },
+		{ "ToolTip", "Object Configuration Settings" },
 	};
 #endif
 	void Z_Construct_UClass_AMechBullet_Statics::NewProp_bCanPierceEnemies_SetBit(void* Obj)
@@ -176,9 +180,9 @@ void EmptyLinkFunctionForGeneratedCodeMechBullet() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_Bullets_MechBullet_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechBullet, AMechBullet::StaticClass, TEXT("AMechBullet"), &Z_Registration_Info_UClass_AMechBullet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechBullet), 4171521736U) },
+		{ Z_Construct_UClass_AMechBullet, AMechBullet::StaticClass, TEXT("AMechBullet"), &Z_Registration_Info_UClass_AMechBullet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechBullet), 1933166172U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_Bullets_MechBullet_h_578340728(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_Bullets_MechBullet_h_785181741(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_Bullets_MechBullet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_Utilities_Weapons_Bullets_MechBullet_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

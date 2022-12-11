@@ -5,25 +5,25 @@
 #include <SaveData/MechSaveData.h>
 #include <Kismet/GameplayStatics.h>
 
-// Sets default values
 AMechCheckpoint::AMechCheckpoint()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+	// Initialize variables with default values
 	Id = 0;
+	PrimaryActorTick.bCanEverTick = true;
 }
 
 void AMechCheckpoint::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	// Assign the Id based on how many Checkpoints are currently in the World
 	if (UMechGameInstance* GameInstance = Cast<UMechGameInstance>(GetGameInstance()))
 	{
 		Id = GameInstance->GetTotalCheckpoints() + 1;
 		GameInstance->AddCheckpoint();
 	}
 
+	// Notify others that the checkpoint has been created
 	OnCreated.Broadcast();
 }
 
@@ -39,6 +39,7 @@ bool AMechCheckpoint::IsCheckpointActive() const
 
 void AMechCheckpoint::SaveProgress(AMechPaperPlayer* Player)
 {
+	// Ensure Player is valid
 	if (!Player)
 	{
 		return;
@@ -52,6 +53,7 @@ void AMechCheckpoint::SaveProgress(AMechPaperPlayer* Player)
 		return;
 	}
 
+	// Notify others when we Save the data
 	if (SaveData->SaveData(GetWorld(), this, Player))
 	{
 		OnSave.Broadcast();

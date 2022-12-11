@@ -116,7 +116,9 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MechData" },
+		{ "Comment", "// Public Read-only Getters for private data\n" },
 		{ "ModuleRelativePath", "Public/MechGameInstance.h" },
+		{ "ToolTip", "Public Read-only Getters for private data" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMechGameInstance, nullptr, "GetLifeCount", nullptr, nullptr, sizeof(Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::MechGameInstance_eventGetLifeCount_Parms), Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_GetLifeCount_Statics::Function_MetaDataParams)) };
@@ -198,7 +200,9 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MechData" },
+		{ "Comment", "// Public Setters for private data\n" },
 		{ "ModuleRelativePath", "Public/MechGameInstance.h" },
+		{ "ToolTip", "Public Setters for private data" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMechGameInstance, nullptr, "SetLives", nullptr, nullptr, sizeof(Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::MechGameInstance_eventSetLives_Parms), Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_SetLives_Statics::Function_MetaDataParams)) };
@@ -221,7 +225,9 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMechGameInstance_StartDeath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "MechData" },
+		{ "Comment", "// Functions\n" },
 		{ "ModuleRelativePath", "Public/MechGameInstance.h" },
+		{ "ToolTip", "Functions" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMechGameInstance_StartDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMechGameInstance, nullptr, "StartDeath", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMechGameInstance_StartDeath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMechGameInstance_StartDeath_Statics::Function_MetaDataParams)) };
@@ -255,10 +261,10 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMechGameInstance_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UMechGameInstance_GetActiveCheckpoint, "GetActiveCheckpoint" }, // 3745519216
-		{ &Z_Construct_UFunction_UMechGameInstance_GetLifeCount, "GetLifeCount" }, // 3218627894
+		{ &Z_Construct_UFunction_UMechGameInstance_GetLifeCount, "GetLifeCount" }, // 1029321948
 		{ &Z_Construct_UFunction_UMechGameInstance_SetActiveCheckpoint, "SetActiveCheckpoint" }, // 4003902563
-		{ &Z_Construct_UFunction_UMechGameInstance_SetLives, "SetLives" }, // 76291671
-		{ &Z_Construct_UFunction_UMechGameInstance_StartDeath, "StartDeath" }, // 3474318279
+		{ &Z_Construct_UFunction_UMechGameInstance_SetLives, "SetLives" }, // 1152091493
+		{ &Z_Construct_UFunction_UMechGameInstance_StartDeath, "StartDeath" }, // 1744724854
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMechGameInstance_Statics::Class_MetaDataParams[] = {
@@ -303,9 +309,9 @@ void EmptyLinkFunctionForGeneratedCodeMechGameInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UMechGameInstance, UMechGameInstance::StaticClass, TEXT("UMechGameInstance"), &Z_Registration_Info_UClass_UMechGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMechGameInstance), 432639024U) },
+		{ Z_Construct_UClass_UMechGameInstance, UMechGameInstance::StaticClass, TEXT("UMechGameInstance"), &Z_Registration_Info_UClass_UMechGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMechGameInstance), 839993490U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_4031573007(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_3852503131(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_MechGameInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

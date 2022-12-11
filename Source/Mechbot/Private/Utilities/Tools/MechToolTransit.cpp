@@ -2,7 +2,8 @@
 
 #include "Utilities/Tools/MechToolTransit.h"
 
-// Sets default values
+// NOT YET IMPLEMENTED - Kept for future use
+
 AMechToolTransit::AMechToolTransit()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.

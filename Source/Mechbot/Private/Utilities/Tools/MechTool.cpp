@@ -2,6 +2,8 @@
 
 #include "Utilities/Tools/MechTool.h"
 
+// NOT YET IMPLEMENTED - Kept for future use
+
 void AMechTool::ActivateMainAbility(/*const FVector& StartLocation, const FVector& EndLocation*/)
 {
 	Super::ActivateMainAbility();

@@ -58,6 +58,8 @@ public:
 
 private:
 
+	// Data the Player needs to function
+
 	uint8 Energy;
 	bool bCanUseTool;
 
@@ -68,14 +70,14 @@ private:
 	TArray<AMechWeapon*> ObtainedWeapons;
 	uint8 EquippedWeaponSlot;
 	
-	// Planned Upgrades
+	// NOT YET IMPLEMENTED - Kept for future use
 	bool bCanWallJump;
 	bool bHasWallJumpUpgrade;
 	bool bHasDurableArmorUpgrade;
 
 protected:
 
-	// Config variables
+	// Object Configuration Settings
 	UPROPERTY(EditDefaultsOnly, meta=(ClampMin=1))
 	uint8 MaxEnergy;
 
@@ -89,8 +91,13 @@ public:
 
 	virtual void BeginPlay() override;
 
-	// Getters
+	// Public Read-Only Getters
 	bool CanWallJump() const { return bHasWallJumpUpgrade && bCanWallJump; }
+	const FTransform& GetBulletSpawnTransform() const { return (BulletSpawnLocation) ? BulletSpawnLocation->GetComponentTransform() : GetActorTransform(); }
+	const TArray<AMechTool*>& GetObtainedTools() { return ObtainedTools; }
+
+	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
+	const TArray<AMechWeapon*>& GetObtainedWeapons() { return ObtainedWeapons; }
 
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
 	const AMechWeapon* GetEquippedWeapon() const { return (ObtainedWeapons.IsValidIndex(EquippedWeaponSlot)) ? ObtainedWeapons[EquippedWeaponSlot] : nullptr; }
@@ -104,27 +111,22 @@ public:
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Weapon")
 	const bool HasAnyWeapons() const { return ObtainedWeapons.Num() > 0; }
 
-	const FTransform& GetBulletSpawnTransform() const { return (BulletSpawnLocation) ? BulletSpawnLocation->GetComponentTransform() : GetActorTransform(); }
-	const TArray<AMechWeapon*>& GetObtainedWeapons() { return ObtainedWeapons; }
-	const TArray<AMechTool*>& GetObtainedTools() { return ObtainedTools; }
-
-	// Health
-	virtual void TakeDamage(const uint8 Amount) override;
-
-	// Energy
-	void SetRechargeEnergyRate(const uint8 NewRate) { RechargeEnergyRate = NewRate; }
-	void RechargeEnergy();
-	void UseEnergy(const uint8 Amount);
-
 	UFUNCTION(BlueprintPure, Category = "MechDroid|Player|Energy")
 	float GetPercentEnergy() const { return (MaxEnergy != 0) ? ((Energy * 1.f) / MaxEnergy) : 0.f; }
+
+	// Health Functions
+	virtual void TakeDamage(const uint8 Amount) override;
+
+	// Energy Functions
+	void SetRechargeEnergyRate(const uint8 NewRate) { RechargeEnergyRate = NewRate; }
+	void UseEnergy(const uint8 Amount);
 
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Energy")
 	void RegainEnergy(const uint8 Amount);
 
 	void SignalEnergyUpdated();
 
-	// Get Tools and Weapons 
+	// Utility Functions
 	bool HasUtility(const AMechUtility* Utility);
 	bool HasTool(const AMechTool* Tool);
 	bool HasWeapon(const AMechWeapon* Weapon);
@@ -135,16 +137,17 @@ public:
 
 	bool IsUtilitySwapValid(const int32 UtilitiesSize, const uint8 NewSlot, const uint8 EquippedSlot);
 	void SwapEquippedTool(const uint8 ToolSlot);
+
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
 	void SwapEquippedWeapon(const uint8 WeaponSlot);
 
-	// Use Tools
+	// Utility Functions - Use Tools
 	bool IsEquippedToolSlotValid();
 	bool CanUseEquippedTool();
 	void ActivateEquippedToolMain();
 	void ActivateEquippedToolSpecial();
 
-	// Use Weapons
+	// Utility Functions - Use Weapons
 	bool IsEquippedWeaponSlotValid();
 	bool CanUseEquippedWeapon();
 
@@ -154,6 +157,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MechDroid|Player|Weapon")
 	bool ActivateEquippedWeaponSpecial();
 	
+	// Event Functions
 	UFUNCTION(BlueprintCallable)
 	void SaveOnWin();
 };

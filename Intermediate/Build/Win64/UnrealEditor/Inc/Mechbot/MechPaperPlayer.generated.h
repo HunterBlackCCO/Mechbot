@@ -107,7 +107,8 @@ static inline void FOnLoad_DelegateWrapper(const FMulticastScriptDelegate& OnLoa
 	DECLARE_FUNCTION(execHasAnyWeapons); \
 	DECLARE_FUNCTION(execGetEquippedWeaponSlot); \
 	DECLARE_FUNCTION(execGetEquippedWeaponCooldown); \
-	DECLARE_FUNCTION(execGetEquippedWeapon);
+	DECLARE_FUNCTION(execGetEquippedWeapon); \
+	DECLARE_FUNCTION(execGetObtainedWeapons);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
@@ -122,7 +123,8 @@ static inline void FOnLoad_DelegateWrapper(const FMulticastScriptDelegate& OnLoa
 	DECLARE_FUNCTION(execHasAnyWeapons); \
 	DECLARE_FUNCTION(execGetEquippedWeaponSlot); \
 	DECLARE_FUNCTION(execGetEquippedWeaponCooldown); \
-	DECLARE_FUNCTION(execGetEquippedWeapon);
+	DECLARE_FUNCTION(execGetEquippedWeapon); \
+	DECLARE_FUNCTION(execGetObtainedWeapons);
 
 
 #define FID_Mechbot_Source_Mechbot_Public_Droids_MechPaperPlayer_h_27_INCLASS_NO_PURE_DECLS \

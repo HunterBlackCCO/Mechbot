@@ -67,9 +67,9 @@ void EmptyLinkFunctionForGeneratedCodeMechSaveData() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMechSaveData_Statics::NewProp_Lives_MetaData[] = {
 		{ "Category", "MechSaveData" },
-		{ "Comment", "// Variables to save\n" },
+		{ "Comment", "// Data to save\n" },
 		{ "ModuleRelativePath", "Public/SaveData/MechSaveData.h" },
-		{ "ToolTip", "Variables to save" },
+		{ "ToolTip", "Data to save" },
 	};
 #endif
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UMechSaveData_Statics::NewProp_Lives = { "Lives", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMechSaveData, Lives), nullptr, METADATA_PARAMS(Z_Construct_UClass_UMechSaveData_Statics::NewProp_Lives_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMechSaveData_Statics::NewProp_Lives_MetaData)) };
@@ -84,9 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeMechSaveData() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMechSaveData_Statics::NewProp_ObtainedTools_MetaData[] = {
 		{ "Category", "MechSaveData" },
-		{ "Comment", "// Utilities\n" },
 		{ "ModuleRelativePath", "Public/SaveData/MechSaveData.h" },
-		{ "ToolTip", "Utilities" },
 	};
 #endif
 	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMechSaveData_Statics::NewProp_ObtainedTools = { "ObtainedTools", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMechSaveData, ObtainedTools), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UMechSaveData_Statics::NewProp_ObtainedTools_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMechSaveData_Statics::NewProp_ObtainedTools_MetaData)) };
@@ -142,9 +140,9 @@ void EmptyLinkFunctionForGeneratedCodeMechSaveData() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechSaveData_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UMechSaveData, UMechSaveData::StaticClass, TEXT("UMechSaveData"), &Z_Registration_Info_UClass_UMechSaveData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMechSaveData), 533956455U) },
+		{ Z_Construct_UClass_UMechSaveData, UMechSaveData::StaticClass, TEXT("UMechSaveData"), &Z_Registration_Info_UClass_UMechSaveData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMechSaveData), 1624532508U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechSaveData_h_3631333037(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechSaveData_h_2167980719(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechSaveData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechSaveData_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

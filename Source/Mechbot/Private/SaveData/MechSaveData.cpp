@@ -6,12 +6,14 @@
 
 bool UMechSaveData::SaveData(const UWorld* World, AMechCheckpoint* Checkpoint, AMechPaperPlayer* Player)
 {
+	// Ensure the World and Player are valid
 	if (!World || !Player)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("UMechSaveData::SaveData() - World or Player is null."));
 		return false;
 	}
 
+	// Get the Game Instance for persistent data
 	UMechGameInstance* GameInstance = Cast<UMechGameInstance>(World->GetGameInstance());
 	if (!GameInstance)
 	{
@@ -19,7 +21,8 @@ bool UMechSaveData::SaveData(const UWorld* World, AMechCheckpoint* Checkpoint, A
 		return false;
 	}
 
-	// Make sure data is valid
+	// Make sure the data requesting Save is valid
+	// A nullptr Checkpoint is valid and means the Player is starting from the beginning
 	Lives = GameInstance->GetLifeCount();
 	if (Lives == 0 || (Checkpoint && Checkpoint->GetId() == 0))
 	{
@@ -30,11 +33,12 @@ bool UMechSaveData::SaveData(const UWorld* World, AMechCheckpoint* Checkpoint, A
 	// Pause the game while writing to files
 	UGameplayStatics::SetGamePaused(World, true);
 
-	// Save the Player Data
+	// Store the data to be saved
 	ActiveCheckpoint = Checkpoint;
 	ObtainedTools = Player->GetObtainedTools();
 	ObtainedWeapons = Player->GetObtainedWeapons();
 
+	// Save the data
 	const bool bSaveResult = UGameplayStatics::SaveGameToSlot(this, SAVENAME, 0);
 	if (bSaveResult)
 	{
@@ -57,6 +61,7 @@ bool UMechSaveData::SaveData(const UWorld* World, AMechCheckpoint* Checkpoint, A
 
 void UMechSaveData::SaveDataAfterDeath(const UWorld* World, uint8 LifeCount)
 {
+	// Ensure the World is valid
 	if (!World)
 	{
 		UE_LOG(LogTemp, Error, TEXT("UMechSaveData::SaveDataAfterDeath() - World is null."));
@@ -68,11 +73,12 @@ void UMechSaveData::SaveDataAfterDeath(const UWorld* World, uint8 LifeCount)
 
 	if (LifeCount > 0)
 	{
-		// Maintain the previous Player Data, if any existed
+		// If the Player still has lives remaining, restore data from a previous save
 		if (UGameplayStatics::DoesSaveGameExist(SAVENAME, 0))
 		{
 			if (const UMechSaveData* LoadData = Cast<UMechSaveData>(UGameplayStatics::LoadGameFromSlot(SAVENAME, 0)))
 			{
+				// Store the data to be saved (excluding lives)
 				ActiveCheckpoint = LoadData->ActiveCheckpoint;
 				ObtainedTools = LoadData->ObtainedTools;
 				ObtainedWeapons = LoadData->ObtainedWeapons;
@@ -83,9 +89,10 @@ void UMechSaveData::SaveDataAfterDeath(const UWorld* World, uint8 LifeCount)
 			}
 		}
 
-		// Save the new life count
+		// Store the new life count
 		Lives = LifeCount;
 
+		// Save the data
 		if (!UGameplayStatics::SaveGameToSlot(this, SAVENAME, 0))
 		{
 			UE_LOG(LogTemp, Error, TEXT("UMechSaveData::SaveDataAfterDeath() - Save failed!"));
@@ -93,7 +100,7 @@ void UMechSaveData::SaveDataAfterDeath(const UWorld* World, uint8 LifeCount)
 	}
 	else
 	{
-		// No more lives - Reset Player Save Data
+		// If the Player has no remaining lives, delete any saved data
 		if (UGameplayStatics::DoesSaveGameExist(SAVENAME, 0))
 		{
 			if (!UGameplayStatics::DeleteGameInSlot(SAVENAME, 0))
@@ -109,12 +116,14 @@ void UMechSaveData::SaveDataAfterDeath(const UWorld* World, uint8 LifeCount)
 
 void UMechSaveData::SaveDataAfterGameWin(const UWorld* World, AMechPaperPlayer* Player)
 {
+	// Ensure the World and Player are valid
 	if (!World || !Player)
 	{
 		UE_LOG(LogTemp, Error, TEXT("UMechSaveData::SaveDataAfterGameWin() - World or Player is null."));
 		return;
 	}
 
+	// Get the Game Instance for persistent data
 	UMechGameInstance* GameInstance = Cast<UMechGameInstance>(World->GetGameInstance());
 	if (!GameInstance)
 	{
@@ -122,20 +131,21 @@ void UMechSaveData::SaveDataAfterGameWin(const UWorld* World, AMechPaperPlayer* 
 		return;
 	}
 
-	// Set the Player back to the beginning, keeping their Weapons/Tools and resetting their life count
+	// Restart the Player, keeping their Weapons/Tools and restoring their life count
 	GameInstance->SetLives(3);
 	SaveData(World, nullptr, Player);
 }
 
 bool UMechSaveData::LoadData(const UWorld* World, AMechPaperPlayer* Player)
 {
+	// Ensure the World and Player are valid
 	if (!World || !Player)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("UMechSaveData::LoadData() - World or Player is null."));
 		return false;
 	}
 
-	// Initialize Player Tools/Weapons from stored data
+	// Get the Game Instance for persistent data
 	UMechGameInstance* GameInstance = Cast<UMechGameInstance>(World->GetGameInstance());
 	if (!GameInstance)
 	{
@@ -143,24 +153,26 @@ bool UMechSaveData::LoadData(const UWorld* World, AMechPaperPlayer* Player)
 		return false;
 	}
 
-	// Pause the game while reading from files
+	// Pause the game while reading files
 	UGameplayStatics::SetGamePaused(World, true);
 
-	// Load data from file
+	// Load saved data if any exists
 	const bool bSaveExists = UGameplayStatics::DoesSaveGameExist(SAVENAME, 0);
 	if (bSaveExists)
 	{
+		// If there is an issue with loading the saved data, abort the Load
 		const UMechSaveData* LoadData = Cast<UMechSaveData>(UGameplayStatics::LoadGameFromSlot(SAVENAME, 0));
 		if (!LoadData)
 		{
 			UE_LOG(LogTemp, Error, TEXT("UMechSaveData::LoadData() - Save data found but could not be loaded."));
+
 			UGameplayStatics::SetGamePaused(World, false);
 			return false;
 		}
 		
 		if (LoadData->Lives == 0)
 		{
-			// Data is invalid, delete it
+			// If the saved data is invalid, delete it and abort it
 			if (!UGameplayStatics::DeleteGameInSlot(SAVENAME, 0))
 			{
 				UE_LOG(LogTemp, Error, TEXT("UMechSaveData::LoadData() - Failed to delete existing invalid save data!"));
@@ -173,7 +185,7 @@ bool UMechSaveData::LoadData(const UWorld* World, AMechPaperPlayer* Player)
 			return false;
 		}
 
-		// Data is valid, Load it in
+		// All data should be valid at this point - Load it in
 		GameInstance->SetLives(LoadData->Lives);
 
 		for (AMechTool* Tool : LoadData->ObtainedTools)
@@ -186,9 +198,9 @@ bool UMechSaveData::LoadData(const UWorld* World, AMechPaperPlayer* Player)
 			Weapon->GiveToPlayer(Player);
 		}
 
-		// Move the Player to the checkpoint and activate it if it's valid
 		if (AMechCheckpoint* Checkpoint = LoadData->ActiveCheckpoint)
 		{
+			// Move the Player to the checkpoint and activate it if it's valid
 			const uint8 CheckpointId = Checkpoint->GetId();
 			if (CheckpointId > 0)
 			{

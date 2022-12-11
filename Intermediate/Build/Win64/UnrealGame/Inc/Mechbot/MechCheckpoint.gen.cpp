@@ -27,7 +27,9 @@ void EmptyLinkFunctionForGeneratedCodeMechCheckpoint() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_Mechbot_OnCreated__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// Delegates\n" },
 		{ "ModuleRelativePath", "Public/SaveData/MechCheckpoint.h" },
+		{ "ToolTip", "Delegates" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_Mechbot_OnCreated__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_Mechbot, nullptr, "OnCreated__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_Mechbot_OnCreated__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_Mechbot_OnCreated__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -240,10 +242,12 @@ void EmptyLinkFunctionForGeneratedCodeMechCheckpoint() {}
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated_MetaData[] = {
+		{ "Comment", "// Delegates\n" },
 		{ "ModuleRelativePath", "Public/SaveData/MechCheckpoint.h" },
+		{ "ToolTip", "Delegates" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated = { "OnCreated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechCheckpoint, OnCreated), Z_Construct_UDelegateFunction_Mechbot_OnCreated__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated_MetaData)) }; // 165095850
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated = { "OnCreated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechCheckpoint, OnCreated), Z_Construct_UDelegateFunction_Mechbot_OnCreated__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnCreated_MetaData)) }; // 2486235216
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_OnSave_MetaData[] = {
 		{ "ModuleRelativePath", "Public/SaveData/MechCheckpoint.h" },
@@ -253,7 +257,9 @@ void EmptyLinkFunctionForGeneratedCodeMechCheckpoint() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_ActivationSFX_MetaData[] = {
 		{ "Category", "MechCheckpoint" },
+		{ "Comment", "// Object Configuration Settings\n" },
 		{ "ModuleRelativePath", "Public/SaveData/MechCheckpoint.h" },
+		{ "ToolTip", "Object Configuration Settings" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_ActivationSFX = { "ActivationSFX", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMechCheckpoint, ActivationSFX), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_ActivationSFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMechCheckpoint_Statics::NewProp_ActivationSFX_MetaData)) };
@@ -298,9 +304,9 @@ void EmptyLinkFunctionForGeneratedCodeMechCheckpoint() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMechCheckpoint, AMechCheckpoint::StaticClass, TEXT("AMechCheckpoint"), &Z_Registration_Info_UClass_AMechCheckpoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechCheckpoint), 1359216823U) },
+		{ Z_Construct_UClass_AMechCheckpoint, AMechCheckpoint::StaticClass, TEXT("AMechCheckpoint"), &Z_Registration_Info_UClass_AMechCheckpoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMechCheckpoint), 3578115491U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_76593944(TEXT("/Script/Mechbot"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_1755000148(TEXT("/Script/Mechbot"),
 		Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Mechbot_Source_Mechbot_Public_SaveData_MechCheckpoint_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
