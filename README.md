@@ -3,6 +3,7 @@
 To play the game, navigate to the "Executable" file here: https://github.com/HunterBlackCCO/Mechbot/tree/master/Executable 
 Download the .zip and unpackage it, then run Mechbot.exe.
 
+------
 
 Special thanks to the following creators for their contribution!
 
